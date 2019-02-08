@@ -3,15 +3,20 @@
 INTRO TODO
 
 # Python Package
+To run some of the tasks python package will be needed. To isntall it use:
+```
+sudo pip3 install misio
+```
+# Lab1 [Intelligent agents](lab1)
+Introduction to artificial intelligence basics: agents and environments. This task uses python's aima3 library (Artificial Intelligence Modern Approach).
 
-# Lab1 Intelligent agents
+# Lab2 [Uncertain Wumpus](lab2)
 
-# Lab2 Uncertain Wumpus
+# Lab3 [TODO](lab3)
 
-# Lab3 
+# Lab4-5 [Lost Wumpus](lab4) 
 
-# Lab4 Lost Wumpus 
-
+# Lab6 [MDP](lab6)
 
 # Authors
 TODO
