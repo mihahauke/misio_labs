@@ -14,7 +14,7 @@ Introduction to artificial intelligence basics: agents and environments. This ta
 
 # [Lab3 TODO](lab3)
 
-# [Lab4-5 [Lost Wumpus](lab4) 
+# [Lab4-5 Lost Wumpus](lab4) 
 
 # [Lab 6 MCTS ???](lab6)
 Monte Carlo Tree Search
