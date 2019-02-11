@@ -20,11 +20,13 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
 * Plik wyjściowy zawiera **i** tablic o wielkościach odpowiadających macierzom w pliku wejściowym. Tablice zawierają liczby rzeczywiste oznaczające prawdopodobieńśtwo obecności jamy na danym polu (liczby zaokrąglić do drugiego miejsca po przecinku np. 0.01, 0.20).
 * [Przykładowe pliki in/out](test_cases)
 
+
 ## Zaliczenie
 * Praca indywidualna.
-* Program należy zgłosić na [Optil.io](https://www.optil.io/optilion/author/problem/3159) najpóźniej do **godziny** przed następnymi zajęciami.
+* Program należy zgłosić na [Optil.io](https://www.optil.io/optilion/author/problem/3159).
+* Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
 ## Punktacja
 * **15** punktów: **12**\*poprawność + **3**\*szybkość wykonania
 * **10 pkt** + ewentualne punkty bonusowe
-* **Spóźnienie**: **-3** punkty za każdy rozpoczęty tydzień (punkty mogą być ujemne; nie oddanie zadanie w ogóle skutkuje oceną 2 w pierwszym terminie).
+* **Spóźnienie**: **-3** punkty za każdy rozpoczęty tydzień (punkty mogą być ujemne; nie oddanie zadanie w ogóle skutkuje oceną 2 z przedmiotu).
