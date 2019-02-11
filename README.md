@@ -3,7 +3,7 @@
 INTRO TODO
 
 # Python Package
-To run some of the tasks python package will be needed. To isntall it use:
+To run some of the tasks python package will be needed. To install it use:
 ```
 sudo pip3 install misio
 ```
