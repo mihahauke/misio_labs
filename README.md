@@ -1,5 +1,5 @@
-![MISIO](bear.png)
 # Metody Inteligencji Sztucznej i Obliczeniowej
+![MISIO](bear.png)
 INTRO TODO
 
 # Python Package
