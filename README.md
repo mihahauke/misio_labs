@@ -8,10 +8,11 @@ To run some of the tasks python package will be needed. To install it use:
 sudo pip3 install misio
 ```
 # [Lab1 Intelligent agents](lab1)
-Introduction to artificial intelligence basics: agents and environments. This task uses python's aima3 library (Artificial Intelligence Modern Approach).
+Introduction to artificial intelligence basics: agents, environments, rationality etc. 
+This task uses python's [aima3](https://github.com/Calysto/aima3) library for AIMA(Artificial Intelligence Modern Approach).
 
 # [Lab2 Uncertain Wumpus](lab2)
-
+TODO
 # [Lab3 TODO](lab3)
 
 # [Lab4-5 Lost Wumpus](lab4) 
