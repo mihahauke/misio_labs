@@ -44,7 +44,7 @@ def test_locally(program,
             time_delta = np.inf
 
     if wa:
-        print("Output file incorrect.")
+        import sys
+        print("Output file incorrect.",file=sys.stderr)
     else:
-        ok_results = (np.array(results)).sum()
-        print("score: {}/{}   time: {:0.3f}s".format(ok_results, len(results), time_delta))
+        return results,time_delta
