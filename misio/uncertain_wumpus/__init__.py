@@ -1,1 +1,1 @@
-from ._wumpus import *
+from .testing import *
