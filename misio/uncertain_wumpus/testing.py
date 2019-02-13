@@ -17,6 +17,7 @@ def test_locally(program,
                  baseline_filename):
     from time import time
     import itertools
+    import tqdm
     def load_float_matrix(file, lines_num):
         lines = [file.readline() for _ in range(lines_num)]
         return [float(x) for x in " ".join(lines).split()]
@@ -33,7 +34,7 @@ def test_locally(program,
             instances.append([world, p])
         try:
             start_time = time()
-            for world, p in instances:
+            for world, p in tqdm.tqdm(instances,leave=False):
                 user_output = list(itertools.chain.from_iterable(program(world, p)))
                 result = (user_output == load_float_matrix(output_file, len(world)))
                 results.append(result)
