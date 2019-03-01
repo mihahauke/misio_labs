@@ -6,7 +6,7 @@ Wstępne zapoznanie się z podstawowymi pomysłami w AI: środowiska, agenty, ra
 ## Zadanie
 Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). Postępuj zgodnie z instrukcją.
 
->> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](misio).
+>> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio).
 
 ## Zaliczenie
 * Praca indywidualna.
