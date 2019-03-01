@@ -3,7 +3,7 @@
 This repository contains resources necessary to complete Artificial Intelligence courses (MISiO) at Poznan University of Technology.
 
 # Python Package
-To run some of the tasks python package will be needed. To install it use:
+To run some of the tasks a special python package will be needed. To install it use:
 ```
 sudo pip3 install misio
 ```
