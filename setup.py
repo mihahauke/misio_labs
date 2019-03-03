@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='misio',
-    version='0.0.3',
+    version='0.0.4',
     description="Package for MISiO course at PUT",
     long_description="Package for MISiO course at PUT",
     author='Michał Kempka',
