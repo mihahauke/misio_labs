@@ -3,7 +3,7 @@
 This repository contains resources necessary to complete Artificial Intelligence courses (MISiO) at Poznan University of Technology.
 
 # Python Package
-To run some of the tasks python package will be needed. To install it use:
+To run some of the tasks a special python package will be needed. To install it use:
 ```
 sudo pip3 install misio
 ```
@@ -20,9 +20,9 @@ sudo pip3 install misio
  the course; failure to do so will result in <span style="color:red">**FAILING**</span> (getting grade 2) regardless of points gained from other tasks; 
 * a task is considered completed if a solution is submitted and it scores at least **30%** of achievable points (after potential delay penalty)
 * attendance gets you 1 point/class; in case of any doubts about scoring/cheating lack of attendance may result in disadvantageous consideration
-* a solution has to be submited before a start of the next class; every started week of delay results in -20% penalty
+* a solution has to be submited before a start of the next class; every started week of delay results in -20% penalty (sometimes you'll have 2 weeks for a task)
 * sharing your code or solutions is prohibited (you may however share your thoughts and ideas)
-* submitting someone else's code may vary from getting 0 points or failing the whole course with no right to repeat
+* submitting someone else's code will result in grade **2/2** and any legal repercussions available
 
 # [Lab1 Intelligent agents](lab1) (10 pts)
 Introduction to artificial intelligence basics: agents, environments, rationality etc. 
