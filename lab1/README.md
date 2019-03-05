@@ -8,6 +8,21 @@ Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). Po
 
 >> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio).
 
+```
+git clone https://github.com/mihahauke/misio_labs
+cd misio
+sudo pip3 install 
+```
+albo:
+```
+sudo pip3 install git+https://github.com/mihahauke/misio_labs
+```
+albo bez uprawnień roota:
+```
+pip3 install git+https://github.com/mihahauke/misio_labs --user 
+```
+
+
 ## Zaliczenie
 * Praca indywidualna.
 * Na kolejne zajęcia przynieś **jedną** wydrukowaną kartkę A4 z wynikami zadań. (W szczególności kodem agenta, histogramem).
