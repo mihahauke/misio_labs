@@ -4,8 +4,19 @@ This repository contains resources necessary to complete Artificial Intelligence
 
 # Python Package
 To run some of the tasks a special python package will be needed. To install it use:
+
 ```
-sudo pip3 install misio
+git clone https://github.com/mihahauke/misio_labs
+cd misio
+sudo pip3 install 
+```
+or:
+```
+sudo pip3 install git+https://github.com/mihahauke/misio_labs
+```
+or if you don't have root access:
+```
+pip3 install git+https://github.com/mihahauke/misio_labs --user 
 ```
 
 # Grading
