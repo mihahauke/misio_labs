@@ -6,20 +6,23 @@ Wstępne zapoznanie się z podstawowymi pomysłami w AI: środowiska, agenty, ra
 ## Zadanie
 Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). Postępuj zgodnie z instrukcją.
 
->> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio).
+>> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio) oraz [aima3].
 
 ```
 git clone https://github.com/mihahauke/misio_labs
 cd misio
-sudo pip3 install 
+sudo pip3 install .
+sudo pip3 install aim3
 ```
 albo:
 ```
 sudo pip3 install git+https://github.com/mihahauke/misio_labs
+sudo pip3 install aima3
 ```
 albo bez uprawnień roota:
 ```
 pip3 install git+https://github.com/mihahauke/misio_labs --user 
+pip3 install aima3 --user
 ```
 
 
