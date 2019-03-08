@@ -33,7 +33,7 @@ pip3 install aima3 --user
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
 ## Przykładowe rozwiązanie:
-Kod agenta, który ssie
+Kod agenta, który ssie:
 ```python
 #!usr/bin/python3
 n,s = [int(x) for x in input().split()]
