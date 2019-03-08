@@ -31,3 +31,14 @@ pip3 install aima3 --user
 * Na kolejne zajęcia przynieś **jedną** wydrukowaną kartkę A4 z wynikami zadań. (W szczególności kodem agenta, histogramem).
 * Kod agenta należy zgłosić na [Optil.io](https://www.optil.io/optilion/problem/3161). Testy będą odpalane deterministycznie więc zgłoszenie deterministycznego agenta będzie skutkowało tym samym wynikiem. Przed zgłoszeniem można przetestować agenta lokalnie (wynik powinien być podobny) dlatego czętość zgłoszeń na platformie jest ograniczona. Wyniki na kartce powinny zgadzać się z tymi uzyskanymi na Optil.io.
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
+
+## Przykładowe rozwiązanie:
+Kod agenta, który ssie
+```python
+#!usr/bin/python3
+n,s = [int(x) for x in input().split()]
+for _ in range(n*s):
+  _ = input()
+  print("Suck")
+
+```
