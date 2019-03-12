@@ -40,7 +40,8 @@ Introduction to artificial intelligence basics: agents, environments, rationalit
 This task uses python's [aima3](https://github.com/Calysto/aima3) library for AIMA(Artificial Intelligence Modern Approach).
 
 # [Lab2 Uncertain Wumpus](lab2) (15pts)
-TODO
+Practical example of uncertainty in Artificial Intelligence.
+
 # [Lab3 ](lab3)
 
 # [Lab4-5 Lost Wumpus](lab4) (15pts)
