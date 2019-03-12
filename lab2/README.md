@@ -28,5 +28,4 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
 
 ## Punktacja
 * **15** punktów - średnia ze wszystkich publicznych (5) i prywatnych (8), które są ukryte; do instancji publicznych zostały opublikowane pliki wejściowe, a do części nawet pliki wyjściowe vide [test_cases](test_cases)
-* **10 pkt** + ewentualne punkty bonusowe
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień spóźnienia
