@@ -9,7 +9,7 @@ Napisz program, który wczyta plik zawierający opis środowiska uproszczonego W
 
 W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje na temat nieobserwowalnej części świata).
 
->> Do odpalenia zadania lokalnie potrzebne jest zainstalowanie pakietu [misio](misio).
+>> Do odpalenia zadania lokalnie  moze się przydać pakiet [misio](../misio).
 
 ## Opis wejścia i wyjścia
 
@@ -27,6 +27,6 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
 ## Punktacja
-* **15** punktów: **12**\*poprawność + **3**\*szybkość wykonania
+* **15** punktów - średnia ze wszystkich publicznych (5) i prywatnych (8), które są ukryte; do instancji publicznych zostały opublikowane pliki wejściowe, a do części nawet pliki wyjściowe vide [test_cases](test_cases)
 * **10 pkt** + ewentualne punkty bonusowe
-* **Spóźnienie**: **-3** punkty za każdy rozpoczęty tydzień (punkty mogą być ujemne; nie oddanie zadanie w ogóle skutkuje oceną 2 z przedmiotu).
+* **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień spóźnienia
