@@ -5,10 +5,11 @@ START_MSG = "START"
 
 def run_agent(agent_creator):
     n_runs, n_steps = [int(x) for x in input().split()]
+    agent = agent_creator()
     for _ in range(n_runs):
-        agent = agent_creator()
         for _ in range(n_steps):
-            percept = eval(input())
+            env_info = input()
+            percept = (int(env_info[2]), int(env_info[5])), env_info[10:15]
             action = agent.program(percept)
             print(action, flush=True)
 
