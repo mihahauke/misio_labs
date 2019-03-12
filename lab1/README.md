@@ -28,7 +28,7 @@ pip3 install aima3 --user
 
 ## Zaliczenie
 * Praca indywidualna.
-* Na kolejne zajęcia przynieś **jedną** wydrukowaną kartkę A4 z wynikami zadań. (W szczególności kodem agenta, histogramem).
+* Na kolejne zajęcia przynieś **jedną** wydrukowaną **stronę** A4 z wynikami zadań - odpowiedziami na pytania w notebooku (W szczególności kodem agenta, histogramem). [Przykładowe sprawozdanie](sample_aima_pdf)
 * Kod agenta należy zgłosić na [Optil.io](https://www.optil.io/optilion/problem/3161). Testy będą odpalane deterministycznie więc zgłoszenie deterministycznego agenta będzie skutkowało tym samym wynikiem. Przed zgłoszeniem można przetestować agenta lokalnie (wynik powinien być podobny) dlatego czętość zgłoszeń na platformie jest ograniczona. Wyniki na kartce powinny zgadzać się z tymi uzyskanymi na Optil.io.
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
