@@ -1,6 +1,6 @@
 import numpy as np
 
-POINTS_FOR_TEST = 12.0
+POINTS_FOR_TEST = 15.0
 
 
 def load_world(infile):
