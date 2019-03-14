@@ -9,7 +9,7 @@ Napisz program, który wczyta plik zawierający opis środowiska uproszczonego W
 
 W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje na temat nieobserwowalnej części świata).
 
->> Do odpalenia zadania lokalnie  moze się przydać pakiet [misio](../misio).
+>> Do odpalenia zadania lokalnie  **może** się przydać pakiet [misio](../misio).
 
 ## Opis wejścia i wyjścia
 
