@@ -23,7 +23,7 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
 
 ## Zaliczenie
 * Praca indywidualna.
-* Program należy zgłosić na [Optil.io](https://www.optil.io/optilion/author/problem/3159).
+* Program należy zgłosić na [Optil.io](https://www.optil.io/optilion/problem/3159).
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
 ## Punktacja
