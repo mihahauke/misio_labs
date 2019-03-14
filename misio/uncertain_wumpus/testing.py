@@ -6,7 +6,7 @@ POINTS_FOR_TEST = 15.0
 def load_world(infile):
     first_line = infile.readline().split()
     n = int(first_line[0])
-    p = float(infile.readline())
+    p = np.float64(infile.readline())
     world = []
     for i in range(n):
         world.append(list(infile.readline().strip()))
@@ -15,12 +15,12 @@ def load_world(infile):
 
 
 def compare_outputs(w0, w1):
-    return (np.array(w0) - np.array(w1)).mean() < 0.0001
+    return abs((np.array(w0, dtype=np.float64) - np.array(w1, dtype=np.float64))).mean() < 0.0005
 
 
 def load_output(file, lines_num):
     lines = [file.readline() for _ in range(lines_num)]
-    lines = [float(x) for x in " ".join(lines).split()]
+    lines = [np.float64(x) for x in " ".join(lines).split()]
     return lines
 
 
