@@ -27,5 +27,5 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
 * Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
 
 ## Punktacja
-* **15** punktów - średnia ze wszystkich publicznych (5) i prywatnych (8), które są ukryte; do instancji publicznych zostały opublikowane pliki wejściowe, a do części nawet pliki wyjściowe vide [test_cases](test_cases)
+* **15** punktów - średnia z 15 instancji; do części z nich zostały opublikowane pliki wejściowe, a do części nawet pliki wyjściowe, vide [test_cases](test_cases)
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień spóźnienia
