@@ -52,7 +52,7 @@ class LostWumpusGame(object):
     def reset(self):
         self.moves = 0
         self.finished = False
-        self.position=self.exit_loc
+        self.position = self.exit_loc
         while self.position == self.exit_loc:
             self.position = [np.random.randint(self.h), np.random.randint(self.w)]
         self._update_sensory_output()
@@ -119,7 +119,7 @@ def load_world(filename: str, new_format: bool = False):
 
         map = np.zeros((h, w), dtype=np.uint8)
         for i in enumerate(range(h)):
-            line=file.readline()
+            line = file.readline()
             line = [mapping[x] for x in line.strip()]
             map[i, :] = line
 
@@ -145,7 +145,11 @@ def save_world(
 
 class AgentStub(object):
     def __init__(self, map, p, pj, pn):
-        pass
+        self.p = p
+        self.pj = pj
+        self.pn = pn
+        self.h, self.w = map.shape
+        self.map = map.astype(np.float64)
 
     def sense(self, sensory_input: bool):
         raise NotImplementedError()
@@ -161,8 +165,9 @@ class AgentStub(object):
 
 
 class RandomAgentStub(AgentStub):
-    def __init__self(self, map, p, pj, pn):
-        self.histogram = np.ones_like(map)
+    def __init__(self, *args, **kwargs):
+        super(RandomAgentStub, self).__init__(*args, **kwargs)
+        self.histogram = np.ones_like(self.map)
 
     def sense(self, sensory_input: bool):
         pass

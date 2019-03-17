@@ -9,7 +9,7 @@ setup(
     author='Michał Kempka',
     author_email='mkempka@cs.put.poznan.pl',
     packages=find_packages(),
-    install_requires=['numpy', 'aima3'],
+    install_requires=['numpy', 'aima3','scikit-learn','scipy'],
     # package_data={'misio': []},
     classifiers=[
         # Development Status :: 1 - Planning
