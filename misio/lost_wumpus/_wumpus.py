@@ -88,3 +88,4 @@ class LostWumpusGame(object):
             self.sensory_output = np.random.binomial(1, self.pj)
         else:
             self.sensory_output = np.random.binomial(1, self.pn)
+
