@@ -34,30 +34,28 @@ def load_input_file(filename: str, new_format: bool = False):
             world = np.zeros((h, w), dtype=np.uint8)
             for i in enumerate(range(h)):
                 line = file.readline()
-                line = [mapping[x] for x in line.strip()]
-                world[i, :] = line
+                world[i, :] = [mapping[x] for x in line.strip()]
             worlds.append((world, p, pj, pn))
 
     return worlds
 
 
-def load_world(filename: str, new_format: bool = False):
-    with open(filename, "r") as file:
-        p = float(file.readline())
-        pj, pn = [float(x) for x in file.readline().split()]
-        h, w = [int(x) for x in file.readline().split()]
-        if new_format:
-            mapping = {x: int(x) for x in range(2)}
-        else:
-            mapping = {"J": Field.CAVE, "W": Field.EXIT, ".": Field.EMPTY}
+def load_world_from_stdin(new_format: bool = False):
+    import sys
+    p = float(input())
+    pj, pn = [float(x) for x in input().split()]
+    h, w = [int(x) for x in input().split()]
+    if new_format:
+        mapping = {x: int(x) for x in range(2)}
+    else:
+        mapping = {"J": Field.CAVE, "W": Field.EXIT, ".": Field.EMPTY}
 
-        map = np.zeros((h, w), dtype=np.uint8)
-        for i in enumerate(range(h)):
-            line = file.readline()
-            line = [mapping[x] for x in line.strip()]
-            map[i, :] = line
+    world = np.zeros((h, w), dtype=np.uint8)
+    for i in range(h):
+        line = input()
+        world[i, :] = [mapping[x] for x in line.strip()]
 
-    return map, p, pj, pn
+    return world, p, pj, pn
 
 
 def save_world(

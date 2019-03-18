@@ -21,9 +21,10 @@ def test_locally(filename, agent_class,
 
     if seed is not None:
         np.random.seed(seed)
-    run_seeds = generate_deterministic_seeds(seed, n)
 
     worlds = load_input_file(filename)
+    run_seeds = generate_deterministic_seeds(seed, [len(worlds), n])
+
     for world_i, (m, p, pj, pn) in enumerate(worlds):
         agent = agent_class(m, p, pj, pn)
         max_moves = default_steps_constraint(m)
@@ -31,7 +32,7 @@ def test_locally(filename, agent_class,
 
         run_scores = []
         for run_i in tqdm.trange(n, leave=False, desc="map{}/{}".format(world_i, len(worlds))):
-            np.random.seed(run_seeds[run_i])
+            np.random.seed(run_seeds[world_i, run_i])
             agent.reset()
             game.reset()
             while not game.finished:
