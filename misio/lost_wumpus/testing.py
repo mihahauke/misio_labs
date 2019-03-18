@@ -1,36 +1,36 @@
 import tqdm
 import numpy as np
-from ._wumpus import load_world, LostWumpusGame
+from ._wumpus import LostWumpusGame, Action
+from .util import load_input_file
 import traceback
+from ..util import generate_deterministic_seeds
+
+DEFAULT_TEST_RUNS = 100
 
 
-def test_locally(filenames_or_dir, agent_class,
+def default_steps_constraint(world):
+    return world.shape[0] * world.shape[1] * 2
+
+
+def test_locally(filename, agent_class,
                  n: int = 100,
                  seed: int = None,
-                 verbose: bool = False,
-                 max_moves=None):
-    if isinstance(filenames_or_dir, list):
-        filenames = filenames_or_dir
-    else:
-        import glob
-        filenames = sorted(glob.glob(filenames_or_dir + "/*"))
+                 verbose: bool = False):
     mean_scores = []
     stds = []
 
     if seed is not None:
         np.random.seed(seed)
-    run_seeds = np.random.randint(0, np.iinfo(np.uint32).max, n)
+    run_seeds = generate_deterministic_seeds(seed, n)
 
-    for filename in filenames:
-        m, p, pj, pn = load_world(filename)
+    worlds = load_input_file(filename)
+    for world_i, (m, p, pj, pn) in enumerate(worlds):
         agent = agent_class(m, p, pj, pn)
-        if max_moves is None:
-            max_moves = np.product(m.shape) * 2
+        max_moves = default_steps_constraint(m)
         game = LostWumpusGame(m, p, pj, pn, max_moves=max_moves)
-        filename_short = filename.split("/")[-1]
 
         run_scores = []
-        for run_i in tqdm.trange(n, leave=False, desc=filename_short):
+        for run_i in tqdm.trange(n, leave=False, desc="map{}/{}".format(world_i, len(worlds))):
             np.random.seed(run_seeds[run_i])
             agent.reset()
             game.reset()
@@ -44,19 +44,22 @@ def test_locally(filenames_or_dir, agent_class,
                     traceback.print_exc()
                     exit(-1)
                 try:
+                    if move not in Action:
+                        print("Action: '{}' not supported".format(move))
+                        exit(-2)
                     game.apply_move(move)
                 except:
-                    print("Environment failed. Pleaser report it. ABORTING.")
+                    print("Environment failed. Please report it. ABORTING.")
                     traceback.print_exc()
-                    exit(-2)
-
+                    exit(-3)
             run_scores.append(game.moves)
         mean_score = np.mean(run_scores)
         std = np.std(run_scores)
         mean_scores.append(mean_score)
         stds.append(std)
         if verbose:
-            print("{}: avg score: {:0.2f} ±{:0.2f}".format(filename_short, mean_score, std))
+            print("map{}: avg score: {:0.2f} ±{:0.2f}".format(world_i, mean_score, std))
+
     mean_total_score = np.sum(mean_scores)
     total_std = (np.array(stds) ** 2).sum() ** 0.5
     if verbose:
