@@ -36,3 +36,27 @@ class RandomAgent(AgentStub):
 
     def get_histogram(self):
         return self.histogram
+
+
+class SnakeAgent(AgentStub):
+    def __init__(self, *args, **kwargs):
+        super(SnakeAgent, self).__init__(*args, **kwargs)
+        self.histogram = np.ones_like(self.map)
+
+        self.times_moved = 0
+        self.direction = Action.LEFT
+
+    def sense(self, sensory_input: bool):
+        pass
+
+    def move(self):
+        if self.times_moved < self.w - 1:
+            self.times_moved += 1
+            return self.direction
+        else:
+            self.times_moved = 0
+            self.direction = Action.RIGHT if self.direction == Action.LEFT else Action.LEFT
+            return Action.DOWN
+
+    def get_histogram(self):
+        return self.histogram
