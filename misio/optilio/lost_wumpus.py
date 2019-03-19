@@ -2,7 +2,7 @@ from ..lost_wumpus.util import load_world_from_stdin
 from ..lost_wumpus import Field
 
 
-def run_agent(agent_class, filename):
+def run_agent(agent_class, ignore):
     n_worlds = int(input())
     n_runs = int(input())
     for world_i in range(n_worlds):

@@ -42,9 +42,12 @@ This task uses python's [aima3](https://github.com/Calysto/aima3) library for AI
 # [Lab2 Uncertain Wumpus](lab2) (15pts)
 Practical example of uncertainty in Artificial Intelligence.
 
-# [Lab3 ](lab3)
+# [Lab3 Lost Wumpus](lab3) (15pts)
+Using histogram filter for navigation.
 
-# [Lab4-5 Lost Wumpus](lab4) (15pts)
+# [Lab4-5 ](lab4)
+?
+
 TODO
 # [Lab 6 MCTS](lab6) (15pts)
 Monte Carlo Tree Search
