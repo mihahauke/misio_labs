@@ -1,4 +1,4 @@
-# Lab 4 Zagubiony Wumpus
+# Lab 5 MDP (AIMA)
 
 ## Cel
 Wstęp do Procesów Decyzyjnych Markova i programowania dynamicznego.
@@ -17,5 +17,5 @@ Przykładowe wejście i wyjście zaprezentowane jest też w plikach [mdp1_sample
 * Termin: przed zajęciami za **tydzień**
 
 ## Punktacja
-* 10 punktów
+* 10 punktów (5 instancji publicznych i 3 prywatne)
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
