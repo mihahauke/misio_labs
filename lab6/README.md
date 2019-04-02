@@ -1,4 +1,4 @@
-# Lab 8 MDP (Markov Decision Process)
+# Lab 6 MDP (Markov Decision Process)
 
 ## Cel
 Ćwiczenia z Procesów Decyzyjnych Markova.
