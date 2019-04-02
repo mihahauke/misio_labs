@@ -1,4 +1,4 @@
-# Lab 4 Zagubiony Wumpus
+# Lab 3 Zagubiony Wumpus
 
 ## Cel
 Wykorzystanie filtru histogramowego
