@@ -18,7 +18,7 @@ Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymali
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3168)
-* Termin: **przed** zajęciami za **2 tygodnie**
+* Termin: **przed** zajęciami za **2 tygodnie** - dla grup, którym zajęcia wypadną (święta/godziny rektorskie) spóźnienia naliczane są wedle tygodni kalendarzowych, a każdy tydzień rozpoczyna się wraz z godziną, o której rozpoczęłyby się zajęcia gdyby się odbywały
 
 ## Punktacja
 * 15 punktów (średnia ze wszystkich instancji)
