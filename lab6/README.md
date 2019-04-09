@@ -7,7 +7,7 @@
 
 ## Zaliczenie
 *
-* Termin: **godzina przed** kolejnymi zajęciami (planowo tydzień)
+* Termin: **godzina przed** zajęciami za **2 tygodnie**
 
 ## Punktacja
 * TODO
