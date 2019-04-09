@@ -4,7 +4,7 @@
 Ćwiczenia z Procesów Decyzyjnych Markova.
 
 ## Zadanie
-Wumpus prowadzi **dwa** rodzinne sklepy sprzedające magiczne gdzyby. Każdego dnia pewna liczba klientów przychodzi do każdego sklepu aby zakupić grzybki. Jeśli w sklepie jest wystarczająca ilość opakowań grzybów, opakowanie takie zostaje sprzedane za **g** cebulionów. Jeśli w sklepie nie ma już grzybów, klient odchodzi z kwitkiem (brak zysku dla Wumpusa).
+Wumpus prowadzi **dwa** rodzinne sklepy sprzedające magiczne grzyby. Każdego dnia pewna liczba klientów przychodzi do każdego sklepu aby zakupić grzybki. Jeśli w sklepie jest wystarczająca ilość opakowań grzybów, opakowanie takie zostaje sprzedane za **g** cebulionów. Jeśli w sklepie nie ma już grzybów, klient odchodzi z kwitkiem (brak zysku dla Wumpusa).
 
 Każdego wieczora (po obsłużeniu wszystkich klientów) wumpus i pani wumpusowa (obsługuje w drugim sklepie) ścinają swieże grzybki w odpowiednich sklepach (hodują je w piwnicach). Liczby klientów (sprzedanych grzybów) i zebranych grzybów opisane są rozkładen Poissona (wyniki długoletnich obserwacji rodziny wumpusa) tzn. prawdopodobieństwo, że wartość przyjmie n równa jest p(n) = lambda^n/(n!)*exp(-lambda) gdzie lambda jest wartością oczekiwaną rozkładu. Załóż, że wartość oczekiwana liczby gości w sklepach to **L1** i **L2** zaś liczba zebranych opakowań grzybów dla odpowiednich sklepów to **L3** i **L4**.
 
