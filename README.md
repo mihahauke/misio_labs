@@ -48,8 +48,8 @@ Using histogram filter for navigation.
 # [Lab5 Markov Decision Processes](lab5) (10pts)
 Introduction to **Markov Decision Processes** (MDPs) which are a fundamental framework for modern AI algorithms.
 
-# [Lab6-7 More MDP(lab6) (15pts)
-
+# [Lab6-7 More MDP](lab6) (15pts)
+More Markov Decision Processes
 
 # [Lab 10-11 Q-Learning](lab10)(15pts)
 Reinforcement Learning: Q-leraning
