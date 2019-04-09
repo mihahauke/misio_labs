@@ -16,7 +16,7 @@ Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym cza
 
 Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymalizującą zysk w cebulionach w przyszłości dla współczynnika dyskontowego **gamma** (czy wiesz, dlaczego musi być mniejszy od 1?) dla każdego stanu (wynikiem jest macierz **m+1** x **m+1**).
 
-Przykładowe rozwiązanie można znaleźć (tutaj)[sample_solution.py] (dobry format, złe odpowiedzi).
+Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi).
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3168)
