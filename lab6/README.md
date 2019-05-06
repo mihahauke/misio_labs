@@ -24,4 +24,4 @@ Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry fo
 
 ## Punktacja
 * 15 punktów (średnia ze wszystkich instancji)
-* **Spóźnienie**: **-3** punkty za każdy rozpoczęty tydzień
+* **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
