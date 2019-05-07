@@ -18,7 +18,9 @@ Do odpalenia kodu lokalnie posłużyć może plik [pacman_run.py](pacman_run.py)
 
 Do odpalenia kodu na optil.io zalecamy użyć klasy **StdIOPacmanRunner**, której zastosowanie jest zaprezentowane w skrypcie [greedy_solution.py](greedy_solution.py) wykorzystującym agenta zachłannego, który jest jednak z zabawy wykluczony (nie implementuje Q-learningu).
 
-Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAgents.py) oraz [featureExtractors.py](featureExtractors.py).
+Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAgents.py) oraz [featureExtractors.py](featureExtractors.py) (nie jest absolutnie konieczne by ich użyć, ale mogą okazać się pomocne).
+
+>> Do zaliczenia zadania wystarczający jest liniowy aproksymator, lecz zachęcamy do zaimplementowania czegoś bardziej skomplikowanego np. sieci neuronowych czy nawet [DQN](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3169)
