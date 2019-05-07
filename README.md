@@ -51,8 +51,8 @@ Introduction to **Markov Decision Processes** (MDPs) which are a fundamental fra
 # [Lab6-8 More MDP](lab6) (15pts)
 More Markov Decision Processes
 
-# [Lab 9-10 Q-Learning](lab10)(15pts)
-Reinforcement Learning: Q-leraning
+# [Lab 9-10 Q-Learning](lab9)(15pts)
+Reinforcement Learning using one of the most popular and well known algorithm: Q-learning
 
 # [Lab 11-12 Actor-critic](lab12)(15pts)
 Reinforcement Learning: actor-critic (continuous spaces)
