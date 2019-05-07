@@ -11,6 +11,8 @@ Zadaniem jest zaimplementowanie algorytmu Q-learninig, który będzie umiał gra
 
 > Niestety nie ma żadnej automatycznej metody weryfikacji faktycznego zaimplementowania Q-learning poza weryfikacją kodu. W przypadku wykrycia braku implementacji Q-learningu (a coś innego, np systemy regułowe, przeszukiwanie drzewa itd.) rozwiązanie nie zostanie zakceptowane (0 punktów).
 
+Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też kod i dane użyte do treningu oraz sposób odtworzenia uczenia (preferencyjnie z ustawionym seedem). **W przypadku braku kodu uczącego zadanie nie zostanie zaliczone.**
+
 ## Kod
 Do odpalenia kodu lokalnie posłużyć może plik [pacman_run.py](pacman_run.py). By zagrać w Pacmana osobiście wystarczy odpalić skrypt. Skrypt ten pozwala też na odpalanie i testowanie agentów, by poznań szczegóły użyj przełącznika **--help**/**-h**.
 
