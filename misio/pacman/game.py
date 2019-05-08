@@ -535,11 +535,8 @@ class Game:
         self.gameOver = False
         self.muteAgents = muteAgents
         self.moveHistory = []
-        self.totalAgentTimes = [0 for agent in agents]
-        self.totalAgentTimeWarnings = [0 for agent in agents]
         self.steps = 0
         self.max_steps = max_steps
-        # import cStringIO
         from io import StringIO
         self.agentOutput = [StringIO() for _ in agents]
 
