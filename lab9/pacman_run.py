@@ -34,7 +34,7 @@ def parse_args():
                         help="Use random ghosts rather malicious ones.")
     parser.add_argument("-z", "--zoom", type=float, dest="zoom",
                         help="Zoom the size of the graphics window", default=1.0)
-    parser.add_argument("--frame-time", type=float, default=0.1,
+    parser.add_argument("-f", "--frame-time", type=float, default=0.1,
                         help="Time to delay between frames; <0 means keyboard", )
     parser.add_argument("--max_actions", type=int,
                         help="Maximum length of time an agent can spend computing in a single game",
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     # Fix the random seed
     if args.seed is not None:
-        seeds = generate_deterministic_seeds(args.seed,args.num_games)
+        seeds = generate_deterministic_seeds(args.seed, args.num_games)
     else:
         seeds = None
     # Choose a Pacman agent
@@ -83,5 +83,6 @@ if __name__ == "__main__":
     print("Win Rate:      {}/{} {:0.2f}".format(results.sum(), len(results), results.mean()))
     if args.show_histogram:
         from matplotlib import pyplot as plt
+
         plt.hist(scores)
         plt.show()

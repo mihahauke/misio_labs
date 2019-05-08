@@ -641,4 +641,11 @@ class Game:
             # For optil.io wrapper:
             if agent_index == 0 and print_ghost_moves and not self.gameOver:
                 print(" ".join([move for _,move in self.moveHistory[-num_ghosts:]]))
+
+                # inform a learning agent of the game result
+        for agentIndex, agent in enumerate(self.agents):
+            if "final" in dir(agent):
+                self.mute(agentIndex)
+                agent.final(self.state)
+                self.unmute()
         self.display.finish()
