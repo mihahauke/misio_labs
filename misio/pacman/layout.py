@@ -18,7 +18,6 @@ import os
 import random
 
 
-
 class Layout:
     """
     A Layout manages the static information about the game board.
@@ -115,7 +114,10 @@ def get_layout(name, back=2):
             layout = try_to_load(name)
     else:
         layout = try_to_load('layouts/' + name + '.lay')
-        if layout is None: layout = try_to_load(name + '.lay')
+        if layout is None:
+            layout = try_to_load(name + '.lay')
+        if layout is None:
+            layout = try_to_load(name)
     if layout is None and back >= 0:
         curdir = os.path.abspath('.')
         os.chdir('..')
