@@ -27,6 +27,6 @@ Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAg
 * Termin: **przed** zajęciami za **2 tygodnie** 
 
 ## Punktacja
-* **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru:
-**15 * max(0, min(1, winrate + 0.2))**
+* **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru: **15 * min(1, max(0, (winrate-0.1))/0.9+0.3)**
+* By zaliczyć zadanie należy otrzymać **POWYŻEJ** 30% punktów (4.5)
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
