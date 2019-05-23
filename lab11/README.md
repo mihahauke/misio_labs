@@ -12,7 +12,7 @@ sudo pip3 install sudo pip3 install box2d-py
 Celem tego ćwiczenia jest poznanie jednego z bardziej popularnych i eleganckich algorytmów uczenia ze wzmocnieniem Q-learningu. 
 
 ## Zadanie
-Zadaniem jest zaimplementowanie algorytmu A2C (advantage actor critic) lub DDPG (Deep Deterministic Policy Gradient), który będzie umiał postawić [wahadło](https://gym.openai.com/envs/Pendulum-v0/) i poruszać się [dwunożnym stworkiem](). 
+Zadaniem jest zaimplementowanie algorytmu A2C (advantage actor critic) lub DDPG (Deep Deterministic Policy Gradient), który będzie umiał postawić [wahadło](https://gym.openai.com/envs/Pendulum-v0/) i poruszać się [dwunożnym stworkiem](https://gym.openai.com/envs/Pendulum-v0/). 
 
 > Niestety nie ma żadnej automatycznej metody weryfikacji faktycznego zaimplementowania A2C poza weryfikacją kodu. W przypadku wykrycia braku implementacji A2C (a coś innego, np systemy regułowe, przeszukiwanie drzewa itd.) rozwiązanie nie zostanie zakceptowane (0 punktów).
 
