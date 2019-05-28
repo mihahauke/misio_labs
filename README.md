@@ -54,8 +54,8 @@ More Markov Decision Processes
 # [Lab 9-10 Q-Learning](lab9)(15pts)
 Reinforcement Learning using one of the most popular and well known algorithm: Q-learning
 
-# [Lab 11-12 Actor-critic](lab12)(15pts)
-Reinforcement Learning: actor-critic (continuous spaces)
+# [Lab 11-12 Actor-critic](lab11)(15pts)
+Reinforcement Learning: actor-critic (continuous action-spaces)
 
 # Authors
 TODO
