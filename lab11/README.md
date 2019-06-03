@@ -24,13 +24,16 @@ Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zaw
 TODO
 
 ### Literatura
-TODO
+* [REINFORCE](http://incompleteideas.net/sutton/williams-92.pdf)
+* [DPG (Deterministic Policy Gradient) off-policy actor-critic]
+* [DDPG (Deep-DPG)](https://arxiv.org/abs/1509.02971)
+* [A3C (asynchronous advantage actor-critic)](https://arxiv.org/pdf/1602.01783.pdf)
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3170)
 * Termin: przed rozpoczęciem sesji 
 
 ## Punktacja
-* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu roblemach, według wzoru: TODO
+* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu roblemach, według wzoru: (pts_pendulum+1000)/70 + (pts_walker+100)/40
 * **UWAGA** zadanie jest **NIEOBOWIĄZKOWE** by zaliczyć laboratorium, można zadania nie oddać i zdać (jeśli pozostałe punkty dadzą 3)
 * **Spóźnienia** nieakceptowane.
