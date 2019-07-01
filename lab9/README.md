@@ -29,4 +29,4 @@ Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAg
 ## Punktacja
 * **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru: **15*max(0, min(1, (winrate - 0.1) / 0.9 + 0.3)) * (winrate > 0.1)**
 * By zaliczyć zadanie należy otrzymać **POWYŻEJ** 30% punktów (4.5)
-* **Spóźnienie**: spóźnienia nie są karane (zmiana), zadanie można oddawać do końca semestru (16.06).
+* **Spóźnienie**: spóźnienia nie są karane (zmiana), zadanie można oddawać do końca semestru (30.06).
