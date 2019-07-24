@@ -35,6 +35,11 @@ pip3 install git+https://github.com/mihahauke/misio_labs --user
 * sharing your code or solutions is prohibited (you may however share your thoughts and ideas)
 * submitting someone else's solutions will result in grade **2/2** and any legal repercussions available
 
+## In case of FAILING:
+There are to options:
+* 2/3 - complete every task (except for AC) for at least 30% and get >=50% points in total (no penalties for delays)
+* 2/X - complete every task (including AC) and you get whatever is determined by your points (no penalties for delays)
+
 # [Lab1 Intelligent agents](lab1) (10 pts)
 Introduction to artificial intelligence basics: agents, environments, rationality etc. 
 This task uses python's [aima3](https://github.com/Calysto/aima3) library for AIMA(Artificial Intelligence Modern Approach).
