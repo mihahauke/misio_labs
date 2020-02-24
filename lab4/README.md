@@ -1,4 +1,4 @@
-# Lab 5 MDP (AIMA)
+# Lab 4 MDP (AIMA)
 
 ## Cel
 Wstęp do Procesów Decyzyjnych Markova i programowania dynamicznego.

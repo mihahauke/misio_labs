@@ -1,4 +1,4 @@
-# Lab 9-10 Q-learning w świecie Pacmana
+# Lab 6 Q-learning w świecie Pacmana
 
 ## Acknowledgement
 Zadanie to bazuje (włącznie z kodem) na jednym z zadań z kursu [CS188 na UC Berkley](http://ai.berkeley.edu/home.html), dostępnym także na [edX](https://edge.edx.org/courses/BerkeleyX/CS188x-8/Artificial_Intelligence/about) jeśli ktoś nie planuje zmieniać uczelni w najbliższym czasie. Gorąco zachęcamy do wzięcia w nim udziału.

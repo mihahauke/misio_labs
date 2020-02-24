@@ -1,4 +1,4 @@
-# Lab 11-12 Advantage Actor Critic (Continuous Action-Spaces RL)
+# Lab 7 Advantage Actor Critic (Continuous Action-Spaces RL)
 
 ## Acknowledgement
 Zadania te korzystają ze środowiska [OpenAI Gym](https://gym.openai.com). By odpalać kod lokalnie należy zainstalować odpowiednie pakiety.

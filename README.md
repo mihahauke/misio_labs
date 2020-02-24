@@ -54,10 +54,10 @@ Practical example of uncertainty in Artificial Intelligence.
 # [Lab 3 Lost Wumpus](lab3) (15pts)
 Using histogram filter for navigation.
 
-# [Lab 4 MDP Wumpus Store](lab4) (10pts)
+# [Lab 4 MDP AIMA](lab4) (10pts)
 Introduction to **Markov Decision Processes** (MDPs) which are a fundamental framework for modern AI algorithms.
 
-# [Lab 5 More MDP](lab5) (15pts)
+# [Lab 5 MDP Wumpus Store](lab5) (15pts)
 More Markov Decision Processes.
 
 # [Lab 6 Q-Learning](lab6)(15pts)
