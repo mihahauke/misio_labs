@@ -1,27 +1,32 @@
-# Lab 6 MDP (Markov Decision Process)
+# Lab 9-10 Q-learning w świecie Pacmana
+
+## Acknowledgement
+Zadanie to bazuje (włącznie z kodem) na jednym z zadań z kursu [CS188 na UC Berkley](http://ai.berkeley.edu/home.html), dostępnym także na [edX](https://edge.edx.org/courses/BerkeleyX/CS188x-8/Artificial_Intelligence/about) jeśli ktoś nie planuje zmieniać uczelni w najbliższym czasie. Gorąco zachęcamy do wzięcia w nim udziału.
 
 ## Cel
-Ćwiczenia z Procesów Decyzyjnych Markova.
+Celem tego ćwiczenia jest poznanie jednego z bardziej popularnych i eleganckich algorytmów uczenia ze wzmocnieniem Q-learningu. 
 
 ## Zadanie
-Wumpus prowadzi **dwa** rodzinne sklepy sprzedające magiczne grzyby. Każdego dnia pewna liczba klientów przychodzi do każdego sklepu aby zakupić grzybki. Jeśli w sklepie jest wystarczająca ilość opakowań grzybów, opakowanie takie zostaje sprzedane za **g** cebulionów. Jeśli w sklepie nie ma już grzybów, klient odchodzi z kwitkiem (brak zysku dla Wumpusa).
+Zadaniem jest zaimplementowanie algorytmu Q-learninig, który będzie umiał grać w Pacmana. Rozwiązanie przetestowane zostanie wielokrotnie na wielu instancjach - część plansz jest dostępna (można się na nich uczyć) w folderze [pacman_layouts](pacman_layouts). 
 
-Każdego wieczora (po obsłużeniu wszystkich klientów) wumpus i pani wumpusowa (obsługuje w drugim sklepie) ścinają swieże grzybki w odpowiednich sklepach (hodują je w piwnicach). Liczby klientów (sprzedanych grzybów) i zebranych grzybów opisane są rozkładen Poissona (wyniki długoletnich obserwacji rodziny wumpusa) tzn. prawdopodobieństwo, że wartość przyjmie n równa jest p(n) = lambda^n/(n!)*exp(-lambda) gdzie lambda jest wartością oczekiwaną rozkładu. Załóż, że wartość oczekiwana liczby gości w sklepach to **L1** i **L2** zaś liczba zebranych opakowań grzybów dla odpowiednich sklepów to **L3** i **L4**.
+> Niestety nie ma żadnej automatycznej metody weryfikacji faktycznego zaimplementowania Q-learning poza weryfikacją kodu. W przypadku wykrycia braku implementacji Q-learningu (a coś innego, np systemy regułowe, przeszukiwanie drzewa itd.) rozwiązanie nie zostanie zakceptowane (0 punktów).
 
-Niestety w każdym sklepie jest tylko **m** super magicznych pojemników, w których trzeba przechowywać grzyby aby się nie zepsuły - wszelki nadmiar jest zjadany przez rodzinę wumpusa na kolację.
+Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też kod i dane użyte do treningu oraz sposób odtworzenia uczenia (preferencyjnie z ustawionym seedem). **W przypadku braku kodu uczącego zadanie nie zostanie zaliczone.**
 
-Aby grzyby były dostępne tam i wtedy gdzie jest na nie popyt, wumpus może w nocy przemieścić opakowanie grzybów z jednego sklepu do drugiego. Niestety przeniesienie jednego opakowania kosztuje wumpusa **c** cebulionów. Dodatkowo, ze względu na wysoką aktywność Magicznych Organów Ścigania wumpus może przenosić jedynie **F** opakowań grzybów każdej nocy (przy większej liczbie ucieczka byłaby niemożliwa).
+## Kod
+Do odpalenia kodu lokalnie posłużyć może plik [pacman_run.py](pacman_run.py). By zagrać w Pacmana osobiście wystarczy odpalić skrypt. Skrypt ten pozwala też na odpalanie i testowanie agentów, by poznań szczegóły użyj przełącznika **--help**/**-h**.
 
-Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym czas jest mierzony w dniach, stanem jest liczba dostępnych opakowań grzybów w poszczególnych sklepach, a akcją liczba opakowań grzybów do przemieszczenia z pierwszego do drugiego sklepu (wartość ujemna oznacza, że trzeba przemieścić grzyby z drugiego sklepu do pierwszego).
+Do odpalenia kodu na optil.io zalecamy użyć klasy **StdIOPacmanRunner**, której zastosowanie jest zaprezentowane w skrypcie [greedy_solution.py](greedy_solution.py) wykorzystującym agenta zachłannego, który jest jednak z zabawy wykluczony (nie implementuje Q-learningu).
 
-Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymalizującą zysk w cebulionach w przyszłości dla współczynnika dyskontowego **gamma** (czy wiesz, dlaczego musi być mniejszy od 1?) dla każdego stanu (wynikiem jest macierz **m+1** x **m+1**).
+Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAgents.py) oraz [featureExtractors.py](featureExtractors.py) (nie jest absolutnie konieczne by ich użyć, ale mogą okazać się pomocne).
 
-Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi).
+>> Do zaliczenia zadania wystarczający jest liniowy aproksymator, lecz zachęcamy do zaimplementowania czegoś bardziej skomplikowanego np. sieci neuronowych czy nawet [DQN](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
 ## Zaliczenie
-* Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3168)
-* Termin: **przed** zajęciami za **3 tygodnie** - dla grup, którym zajęcia wypadną (święta/godziny rektorskie) spóźnienia naliczane są wedle tygodni kalendarzowych, a każdy tydzień rozpoczyna się wraz z godziną, o której rozpoczęłyby się zajęcia gdyby się odbywały
+* Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3169)
+* Termin: **przed** rozpoczęciem się sesji (była zmiana)
 
 ## Punktacja
-* 15 punktów (średnia ze wszystkich instancji)
-* **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
+* **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru: **15*max(0, min(1, (winrate - 0.1) / 0.9 + 0.3)) * (winrate > 0.1)**
+* By zaliczyć zadanie należy otrzymać **POWYŻEJ** 30% punktów (4.5)
+* **Spóźnienie**: spóźnienia nie są karane (zmiana), zadanie można oddawać do końca semestru (30.06).
