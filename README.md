@@ -11,7 +11,7 @@ To run some of the tasks a special python package will be needed. To install it 
 ```
 git clone https://github.com/mihahauke/misio_labs
 cd misio
-sudo pip3 install 
+sudo pip3 install .
 ```
 or:
 ```
