@@ -12,7 +12,7 @@ Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). Po
 git clone https://github.com/mihahauke/misio_labs
 cd misio
 sudo pip3 install .
-sudo pip3 install aim3
+sudo pip3 install aima3
 ```
 albo:
 ```
