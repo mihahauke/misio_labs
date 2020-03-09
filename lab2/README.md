@@ -9,7 +9,7 @@ Napisz program, który wczyta plik zawierający opis prostego środowiska Wumpus
 
 W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje na temat nieobserwowalnej części świata).
 
->> Do odpalenia zadania lokalnie  **może** przyda się pakiet [misio](../misio).
+>> Do odpalenia zadania lokalnie przyda się pakiet [misio](../misio).
 
 [Oryginalny wykład z AIMA](http://aima.eecs.berkeley.edu/slides-pdf/chapter13.pdf)
 
