@@ -4,12 +4,14 @@
 Praktyczne zastosowanie rachunku prawdopodobieństwa dla celów AI.
 
 ## Zadanie
-Napisz program, który wczyta plik zawierający opis środowiska uproszczonego Wumpus’a i dla każdego pola świata wywnioskuje prawdopodobieństwo, że pole zawiera jamę biorąc pod uwagę aktualną wiedzę agenta.
+Napisz program, który wczyta plik zawierający opis prostego środowiska Wumpus’a i dla każdego pola świata wywnioskuje prawdopodobieństwo, że pole zawiera jamę biorąc pod uwagę aktualną wiedzę agenta.
 
 
 W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje na temat nieobserwowalnej części świata).
 
->> Do odpalenia zadania lokalnie  **może** się przydać pakiet [misio](../misio).
+>> Do odpalenia zadania lokalnie  **może** przyda się pakiet [misio](../misio).
+
+[Oryginalny wykład z AIMA](http://aima.eecs.berkeley.edu/slides-pdf/chapter13.pdf)
 
 ## Opis wejścia i wyjścia
 
