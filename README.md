@@ -2,7 +2,7 @@
 ![MISIO](bear.png)
 This repository contains resources necessary to complete Artificial Intelligence courses (MISiO) at Poznan University of Technology.
 
-* [Grades 2020](TODO)
+* [Grades 2020](https://docs.google.com/spreadsheets/d/1gf9hsB2qr4GsQVrZCliCZHcrqlIQ0Bst1mKypeQk57M/edit?usp=sharing)
 * [Grades 2019](https://docs.google.com/spreadsheets/d/1Okp2dJ20mIQSQEw2SzQ-COdBgvsHNPtdypPQ5ROZcxA/edit?usp=sharing) 
 
 # Python Package
