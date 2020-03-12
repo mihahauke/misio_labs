@@ -1,12 +1,18 @@
 #!usr/bin/python3
 import random
 
+ITER_LESS = 1
+DECIDE_ITER = 0.85
+DECIDE_NORMAL = 0.2
+LEN_BIG_STOP = 1000
+LEN_SMALL = 1000
+
 n,s = [int(x) for x in input().split()]
 memory = [[],[]]
 for j in range(n):
-    current_position = 0 #random.choice([0,1])
+    current_position = random.choice([0,1])
     loc = [0, 0]
-
+    iter = 0
     for i in range(s):
         i = input()[1:-1].split(', ')
         location = (int(i[0][1:]), int(i[1][:1]))
@@ -26,28 +32,40 @@ for j in range(n):
         # print("loc: ", loc)
         # print("prob: ", probability)      
 
-        # if clean and clen -> noOp
-
-        if length < 100:
+        if length < LEN_SMALL:
             if loc[current_position] == 1:
                 loc[current_position] = 0
                 print('Suck')
 
             elif loc[current_position] == 0 and current_position == 0:
                 decide = random.uniform(0,1)
-                if decide < 0.15:
-                    current_position = 1
-                    print('Right')
+                if iter <= ITER_LESS:
+                    if decide < DECIDE_ITER:
+                        current_position = 1
+                        print('Right')
+                    else:
+                        print('NoOp')
                 else:
-                    print('NoOp')
+                    if decide < DECIDE_NORMAL:
+                        current_position = 1
+                        print('Right')
+                    else:
+                        print('NoOp')
 
             elif loc[current_position] == 0 and current_position == 1:
                 decide = random.uniform(0,1)
-                if decide < 0.15:
-                    current_position = 0 
-                    print('Left')
-                else: 
-                    print('NoOp')
+                if iter <= ITER_LESS: 
+                    if decide < DECIDE_ITER:
+                        current_position = 0 
+                        print('Left')
+                    else: 
+                        print('NoOp')
+                else:
+                    if decide < DECIDE_NORMAL:
+                        current_position = 0 
+                        print('Left')
+                    else: 
+                        print('NoOp')
         
         else:
             if loc[current_position] == 1:
@@ -56,19 +74,36 @@ for j in range(n):
 
             elif loc[current_position] == 0 and current_position == 0:
                 decide = random.uniform(0,1)
-                if decide < probability:
-                    current_position = 1
-                    print('Right')
+                if iter <= ITER_LESS:
+                    if decide < DECIDE_ITER:
+                        current_position = 1
+                        print('Right')
+                    else:
+                        print('NoOp')
                 else:
-                    print('NoOp')
+                    if decide < probability:
+                        current_position = 1
+                        print('Right')
+                    else:
+                        print('NoOp')
 
             elif loc[current_position] == 0 and current_position == 1:
                 decide = random.uniform(0,1)
-                if decide < probability:
-                    current_position = 0 
-                    print('Left')
-                else: 
-                    print('NoOp')
+                if iter <= ITER_LESS: 
+                    if decide < DECIDE_ITER:
+                        current_position = 0 
+                        print('Left')
+                    else: 
+                        print('NoOp')
+                else:
+                    if decide < probability:
+                        current_position = 0 
+                        print('Left')
+                    else: 
+                        print('NoOp')
+        
+        iter += 1
+        if length > LEN_BIG_STOP: del memory[1][0]
 
 
 
