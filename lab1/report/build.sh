@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-infile="aima_sample_report.tex"
+infile="lab1_125342.tex"
 pdflatex ${infile} && pdflatex ${infile}
 
-rm *log *aux
+rm *log *out *aux

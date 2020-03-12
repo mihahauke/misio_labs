@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+\usepackage[legalpaper, margin=1in]{geometry}
+
+\title{MISIO 2020 - Inteligentne Agenty}
+\author{Bartosz Sobkowiak 125342}
+\date{12.02.2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Pytania}
+\begin{enumerate}
+    \item \textbf{Jakie cechy ma to środowisko?} \\
+    Całkowicie obserwowalne, deterministyczne, epizodyczne, statyczne, dyskretne, jednoagentowe.
+    
+    \item \textbf{Jeden z agentów okazał się dużo lepszy. Dlaczego?} \\
+    Drugi agent przestaje przemieszczać się lewo-prawo, jeśli oba pola są czyste. Wykonuje więc mniej ruchów (dostaje mniej punktów ujemnych), a osiąga taki sam efekt jak pierwszy agent, który cały czas sprawdza każda pole.
+    
+    \item \textbf{Czy agenty ReflexVacuumAgent lub ModelBasedVacuumAgent są racjonalne? Uzasadnij.} \\ 
+    Agent pierwszy pomimo posiadania wiedzy dotyczącej stanu pól i tak się przemieszcza, więc nie maksymalizuje w ten sposób wartości miary jakości. Drugi agent stara się maksymalizować poprzez wykonywanie mniejszej liczby niepotrzebnych ruchów, lecz również nie jest racjonalny.
+    
+    \item \textbf{Czy dla tego środowiska istnieje racjonalny agent odruchowy? Uzasadnij.} \\
+    Jeśli środowisko jest calkowicie obserwowalne, to agent odruchowy może być racjonalny (wykład, slajd 32). To środowisko jest obserwowalne, więc taki agent istnieje.
+    
+    \item \textbf{Jakie ma ono cechy?} \\
+	Całkowicie obserwowalne, stochastyczne, epizodyczne, statyczne, dyskretne, jednoagentowe.
+
+\end{enumerate}
+
+\section{Kod agenta}
+to Kod
+
+\section{Histogram}
+to histiogram
+
+\end{document}
