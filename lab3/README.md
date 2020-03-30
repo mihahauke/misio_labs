@@ -18,5 +18,5 @@ Wumpus posiada mapę świata, ale nie ma pojęcia, gdzie się znajduje. Pomóż 
 * Termin: przed zajęciami za **dwa tygodnie**
 
 ## Punktacja
-* 15 punktów: min(15,5 + (7000-k)/(7000-4700)*(15-5)), gdzie k to jest jest średnia ilośc kroków ze wszystkich instancji
+* 15 punktów: max(0,min(15,4.5 + (6600-k)/(6600-4600)*(15-4.5))), gdzie k jest to średnia ilość kroków z obydwu instancji - każda instancja to odpalenie każdej mapy 100 razy (jakiekolwiek błędy w, którejkolwiek z instancji powodują otrzymanie 0 punktów niezależnie od wyniku na drugiej instancji).
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
