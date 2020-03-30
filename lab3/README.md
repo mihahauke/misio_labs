@@ -18,5 +18,5 @@ Wumpus posiada mapę świata, ale nie ma pojęcia, gdzie się znajduje. Pomóż 
 * Termin: przed zajęciami za **dwa tygodnie**
 
 ## Punktacja
-* 15 punktów: min(15,5 + (7000-k)/(7000-4700)*(15-5)), gdzie k to jest jest średnia ilośc krotków ze wszystkich instancji
+* 15 punktów: min(15,5 + (7000-k)/(7000-4700)*(15-5)), gdzie k to jest jest średnia ilośc kroków ze wszystkich instancji
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
