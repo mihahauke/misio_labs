@@ -12,6 +12,7 @@ Formaty wejścia i wyjścia opisane są na stronie problemu.
 
 Przykładowe wejście i wyjście zaprezentowane jest też w plikach [mdp1_sample.in](mdp1_sample.in) i [mdp1_sample.out](mdp1_sample.out)
 
+Przykładowe, losowe rozwiązanie: [random_solution.py](random_solution.py)
 ## Zaliczenie
 * Rozwiązanie należy zgłościć na [Optil.io](https://www.optil.io/optilion/problem/3167).
 * Zadanie indywidualne (proszę się konsultować, wymieniać pomysłami, natchnieniem, ale **nie kodem**)
