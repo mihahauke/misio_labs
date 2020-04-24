@@ -1,7 +1,7 @@
 # Lab 5 MDP (Markov Decision Process)
 
 ## Cel
-Ćwiczenia z Procesów Decyzyjnych Markova.
+Ćwiczenie z Procesów Decyzyjnych Markova.
 
 ## Zadanie
 Wumpus prowadzi **dwa** rodzinne sklepy sprzedające magiczne grzyby. Każdego dnia pewna liczba klientów przychodzi do każdego sklepu aby zakupić grzybki. Jeśli w sklepie jest wystarczająca ilość opakowań grzybów, opakowanie takie zostaje sprzedane za **g** cebulionów. Jeśli w sklepie nie ma już grzybów, klient odchodzi z kwitkiem (brak zysku dla Wumpusa).
@@ -16,11 +16,11 @@ Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym cza
 
 Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymalizującą zysk w cebulionach w przyszłości dla współczynnika dyskontowego **gamma** (czy wiesz, dlaczego musi być mniejszy od 1?) dla każdego stanu (wynikiem jest macierz **m+1** x **m+1**).
 
-Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi).
+Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi). Przykładowe [wejście](sample_testcase.in) i [wyjście](sample_testcase.out).
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3168)
-* Termin: **przed** zajęciami za **2 tygodnie** - dla grup, którym zajęcia wypadną (święta/godziny rektorskie) spóźnienia naliczane są wedle tygodni kalendarzowych, a każdy tydzień rozpoczyna się wraz z godziną, o której rozpoczęłyby się zajęcia gdyby się odbywały
+* Termin: **przed** zajęciami za **2 tygodnie** - dla grup, którym zajęcia wypadną (święta/godziny rektorskie) spóźnienia naliczane są wedle tygodni kalendarzowych, a każdy tydzień rozpoczyna się wraz z godziną, o której rozpoczęłyby się zajęcia gdyby się odbywały.
 
 ## Punktacja
 * 15 punktów (średnia ze wszystkich instancji)
