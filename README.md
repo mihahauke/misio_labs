@@ -34,14 +34,21 @@ pip3 install git+https://github.com/mihahauke/misio_labs --user
  the course; failure to do so will result in <span style="color:red">**FAILING**</span> (getting grade 2) regardless of points scored on other tasks; 
 * a task is considered completed if a solution is submitted and it scores at least **30%** of achievable points (before potential delay penalty);
 * attendance is **officially** mandatory (as per University code); in case of any doubts about scoring/cheating lack of attendance may result in disadvantageous consideration
-* solutions submitted before the start of the next class; every started week of delay results in -20% penalty (sometimes you'll have 2 weeks)
+* solutions submitted before the start of the next class; every started week of delay results in cummulative **-20%** penalty, some examples:
+    * 15/15 (100%), 5 weeks of delay, task accepted,
+    points gained: 15 *(1-0.2*5) = 0
+    * 10/15 (66.66%), 2 weeks of delay, task accepted,
+    points gained: 10 *(1-0.2*2) = 6
+    * 4.5/15 (30%), 1 week of delay, task accepted,
+    points gained: (1-0.2*1) *4.5 = 3.6
+    * 4.5/15 (30%), 2 weeks of delay, task accepted,
+    points gained: (1-0.2*2)*4.5 =2.7
+    * 4/15 (<30%), no delay, task not accepted, Failing grade (2),
 * sharing your code or solutions is prohibited (you may however share your thoughts and ideas)
 * submitting someone else's solutions or its parts will result in grade **2/2** and any legal repercussions available
 
 ## In case of FAILING:
-There are 2 options:
-* 2/3 - complete every task (except for AC) for at least 30% and get >= 50% points in total (no penalties for delays)
-* 2/X - complete every task (including AC) and you get whatever is determined by your points (no penalties for delays)
+Complete every task and you get whatever is determined by your points (no penalties for delays).
 
 
 # [Lab 1 Intelligent agents](lab1) (10 pts)
