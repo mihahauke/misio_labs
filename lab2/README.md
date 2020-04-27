@@ -21,7 +21,7 @@ W ten sposób agent aktualizuje swoją wiedzę o stanie środowiska (wnioskuje n
     * tablicę o **n** wierszach i **m** kolumnach zawierającą **‘?’** jeśli pole jest nieodwiedzone, **‘B’** jeśli pole jest odwiedzone i agent wyczuł wiatr, **‘O’** jeśli pole jest odwiedzone, ale agent nie wyczuł wiatru.
 * Plik wyjściowy zawiera **i** tablic o wielkościach odpowiadających macierzom w pliku wejściowym. Tablice zawierają liczby rzeczywiste oznaczające prawdopodobieńśtwo obecności jamy na danym polu (liczby zaokrąglić do drugiego miejsca po przecinku np. 0.01, 0.20).
 * [Przykładowe pliki in/out](test_cases)
-* Wynikowe macierze będą porównywane za pomocą funkcji [compare_outputs](../misio/uncertain_wumpus/testing.py#L17)(macierz jest poprawna lub nie), wynik z instancji jest średnia poprawnoscią macierzy pomnożoną przez **15**
+* Wynikowe macierze będą porównywane za pomocą funkcji [compare_outputs](../misio/uncertain_wumpus/testing.py#L17)(macierz jest poprawna lub nie), wynikiem z instancji jest średnia poprawnościa macierzy pomnożona przez **15**
 
 ## Zaliczenie
 * Praca indywidualna.
