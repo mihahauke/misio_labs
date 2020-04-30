@@ -16,7 +16,7 @@ Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym cza
 
 Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymalizującą zysk w wumpusodolarach w przyszłości dla współczynnika dyskontowego **gamma** (czy wiesz, dlaczego musi być mniejszy od 1?) dla każdego stanu (wynikiem jest macierz **m+1** x **m+1**).
 
-Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi). Przykładowe [wejście](sample_testcase.in) i [wyjście](sample_testcase.out).
+Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry format, złe odpowiedzi). Przykładowe [wejście](sample_testcase.in) i [wyjście](sample_testcase.out) (poprawny wynik). "Sample output" z otpill.io to wartośći losowe prezentujące poprawny format.
 
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3168)
