@@ -10,7 +10,7 @@ Każdego wieczora (po obsłużeniu wszystkich klientów) wumpus i pani wumpusowa
 
 Niestety w każdym sklepie jest tylko **m** super magicznych pojemników, w których trzeba przechowywać grzyby aby się nie zepsuły - wszelki nadmiar jest zjadany przez rodzinę wumpusa na kolację.
 
-Aby grzyby były dostępne tam i wtedy gdzie jest na nie popyt, wumpus może w nocy przemieścić grzyby z jednego sklepu do drugiego (po kolacji). Niestety przeniesienie jednego grzyba kosztuje wumpusa **c** wumpusodolarów (specjalne materiały zabezpieczające). Dodatkowo, ze względu na ograniczoną pojemność super-magicznej torby wumpus może przenosić jedynie **F**  grzybów każdej nocy.
+Aby grzyby były dostępne tam i wtedy gdzie jest na nie popyt, wumpus może w nocy przemieścić grzyby z jednego sklepu do drugiego (po kolacji). Niestety przeniesienie jednego grzyba kosztuje wumpusa **c** wumpusodolarów (specjalne materiały zabezpieczające). Dodatkowo, ze względu na ograniczoną pojemność super-magicznej torby wumpus może przenosić jedynie **F**  grzybów każdej nocy. Jeżeli po przeniesieniu w danych sklepie jest więcej niż **m** grzybów, nadmiar jest zjadany i nie może być sprzedany następnego dnia.
 
 Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym czas jest mierzony w dniach, stanem jest liczba dostępnych grzybów w poszczególnych sklepach, a akcją liczba grzybów do przemieszczenia z pierwszego do drugiego sklepu (wartość ujemna oznacza, że trzeba przemieścić grzyby z drugiego sklepu do pierwszego). Grzyby przenoszone są **po** 
 
