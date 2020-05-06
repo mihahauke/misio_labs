@@ -11,7 +11,7 @@ Zadaniem jest zaimplementowanie algorytmu Q-learninig, który będzie umiał gra
 
 > Niestety nie ma żadnej automatycznej metody weryfikacji faktycznego zaimplementowania Q-learning poza weryfikacją kodu. W przypadku wykrycia braku implementacji Q-learningu (a coś innego, np systemy regułowe, przeszukiwanie drzewa itd.) rozwiązanie nie zostanie zakceptowane (0 punktów).
 
-Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też kod i dane użyte do treningu oraz sposób odtworzenia uczenia (preferencyjnie z ustawionym seedem). **W przypadku braku kodu uczącego zadanie nie zostanie zaliczone.**
+Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też **kod** i **dane/** użyte do treningu oraz **instrukcję** odtworzenia uczenia w sposób deterministyczny. **W przypadku braku kodu uczącego, zadanie nie zostanie zaliczone.**
 
 ## Kod
 Do odpalenia kodu lokalnie posłużyć może plik [pacman_run.py](pacman_run.py). By zagrać w Pacmana osobiście wystarczy odpalić skrypt. Skrypt ten pozwala też na odpalanie i testowanie agentów, by poznań szczegóły użyj przełącznika **--help**/**-h**.
@@ -28,6 +28,6 @@ Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAg
 * Termin: **przed** rozpoczęciem lipca 2020
 
 ## Punktacja
-* **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru: **15*max(0, min(1, (winrate - 0.1) / 0.9 + 0.3)) * (winrate > 0.1)**
-* By zaliczyć zadanie należy otrzymać **POWYŻEJ** 30% punktów (4.5)
+* **15** punktów; TODO
+* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% punktów (4.5)
 * **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć zaliczone zadanie przed rozpoczęciem lipca 2020
