@@ -107,22 +107,17 @@ class Layout:
             self.numGhosts += 1
 
 
-def get_layout(name, back=2):
-    if name.endswith('.lay'):
-        layout = try_to_load('layouts/' + name)
-        if layout is None:
-            layout = try_to_load(name)
-    else:
-        layout = try_to_load('layouts/' + name + '.lay')
-        if layout is None:
-            layout = try_to_load(name + '.lay')
-        if layout is None:
-            layout = try_to_load(name)
-    if layout is None and back >= 0:
-        curdir = os.path.abspath('.')
-        os.chdir('..')
-        layout = get_layout(name, back - 1)
-        os.chdir(curdir)
+def get_layout(name):
+    layout = try_to_load( name)
+    if layout is None:
+        if name.endswith('.lay'):
+            layout = try_to_load(os.path.join('pacman_layouts', name))
+            if layout is None:
+                layout = try_to_load(name)
+        else:
+            layout = try_to_load(os.path.join('pacman_layouts', name+".lay"))
+            if layout is None:
+                layout = try_to_load(name + '.lay')
     return layout
 
 

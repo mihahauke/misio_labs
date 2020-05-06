@@ -6,12 +6,12 @@ from ..pacman.textDisplay import NullGraphics
 END_GAME_WORD="END"
 class OptilioPacmanGameRunner(object):
     def __init__(self,
-                 layout_dir,
+                 layout_path,
                  random_ghosts=False,
                  ):
-        layout = get_layout(layout_dir)
+        layout = get_layout(layout_path)
         if layout is None:
-            raise Exception("The layout " + layout_dir + " cannot be found")
+            raise Exception("The layout " + layout_path + " could not be loaded.")
         self.layout = layout
         if random_ghosts:
             from ..pacman.ghostAgents import RandomGhost
