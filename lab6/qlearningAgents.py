@@ -14,7 +14,7 @@
 
 from misio.pacman.game import *
 from misio.pacman.learningAgents import ReinforcementAgent
-from .featureExtractors import *
+from misio.pacman.featureExtractors import IdentityExtractor
 from misio.pacman.util import CustomCounter, lookup
 import random, math
 
@@ -149,8 +149,8 @@ class ApproximateQAgent(PacmanQAgent):
        should work as is.
     """
 
-    def __init__(self, extractor='IdentityExtractor', **args):
-        self.featExtractor = lookup(extractor, globals())()
+    def __init__(self, extractor=IdentityExtractor, **args):
+        self.featExtractor = IdentityExtractor()
         PacmanQAgent.__init__(self, **args)
         self.weights = CustomCounter()
 

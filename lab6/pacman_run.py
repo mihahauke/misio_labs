@@ -38,9 +38,6 @@ def parse_args():
                         help="Zoom the size of the graphics window.")
     parser.add_argument("-f", "--frame-time", type=float, default=0.1,
                         help="Time to delay between frames; <0 means keyboard", )
-    parser.add_argument("--max_actions", type=int,
-                        help="Maximum length of time an agent can spend computing in a single game",
-                        default=np.inf)
     parser.add_argument("-s", "--seed", help="Random seed.", type=np.uint32,
                         default=None)
     parser.add_argument("-v", "--verbose", action="store_true")

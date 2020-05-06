@@ -27,6 +27,14 @@ class FeatureExtractor:
         """
         raise NotImplementedError()
 
+
+class IdentityExtractor(FeatureExtractor):
+    def getFeatures(self, state, action):
+        feats = CustomCounter()
+        feats[(state, action)] = 1.0
+        return feats
+
+
 class CoordinateExtractor(FeatureExtractor):
     def getFeatures(self, state, action):
         feats = CustomCounter()
