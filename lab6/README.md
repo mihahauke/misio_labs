@@ -23,10 +23,11 @@ Do samej implementacji mogą być pomocne pliki [qlearningAgents.py](qlearningAg
 >> Do zaliczenia zadania wystarczający jest liniowy aproksymator, lecz zachęcamy do zaimplementowania czegoś bardziej skomplikowanego np. sieci neuronowych czy nawet [DQN](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
 ## Zaliczenie
-* Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3169)
-* Termin: **przed** rozpoczęciem się sesji (była zmiana)
+* Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3169),
+* Wzięte zostanie pod uwagę **OSTATNIE** zgłoszenie,
+* Termin: **przed** rozpoczęciem lipca 2020
 
 ## Punktacja
 * **15** punktów; punkty będą liczone na podstawie średniej proporcji zwycięstw (winrate, od 0 do 1), na podstawie następującego wzoru: **15*max(0, min(1, (winrate - 0.1) / 0.9 + 0.3)) * (winrate > 0.1)**
 * By zaliczyć zadanie należy otrzymać **POWYŻEJ** 30% punktów (4.5)
-* **Spóźnienie**: spóźnienia nie są karane (zmiana), zadanie można oddawać do końca semestru (30.06).
+* **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć zaliczone zadanie przed rozpoczęciem lipca 2020
