@@ -464,16 +464,16 @@ class GhostRules:
 
 class LocalPacmanGameRunner(object):
     def __init__(self,
-                 layout_dir,
+                 layout_path,
                  random_ghosts=False,
                  show_window=False,
                  zoom_window=1.0,
                  frame_time=0.1
                  ):
         from .layout import get_layout
-        layout = get_layout(layout_dir)
+        layout = get_layout(layout_path)
         if layout == None:
-            raise Exception("The layout " + layout_dir + " cannot be found")
+            raise Exception("The layout " + layout_path + " cannot be found")
         self.layout = layout
         if random_ghosts:
             from .ghostAgents import RandomGhost

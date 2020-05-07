@@ -46,10 +46,6 @@ class CoordinateExtractor(FeatureExtractor):
 
 
 def closestFood(pos, food, walls):
-    """
-    closestFood -- this is similar to the function that we have
-    worked on in the search project; here its all in one place
-    """
     fringe = [(pos[0], pos[1], 0)]
     expanded = set()
     while fringe:
@@ -73,7 +69,6 @@ class SimpleExtractor(FeatureExtractor):
     Returns simple features for a basic reflex Pacman:
     - whether food will be eaten
     - how far away the next food is
-    - whether a ghost collision is imminent
     - whether a ghost is one step away
     """
 

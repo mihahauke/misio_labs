@@ -63,7 +63,7 @@ if __name__ == "__main__":
     agent = AgentClass()
     from misio.pacman.pacman import LocalPacmanGameRunner
 
-    runner = LocalPacmanGameRunner(layout_dir=args.layout,
+    runner = LocalPacmanGameRunner(layout_path=args.layout,
                                    random_ghosts=not args.smart_ghosts,
                                    show_window=not args.no_graphics,
                                    zoom_window=args.zoom,
