@@ -12,7 +12,7 @@ Niestety w każdym sklepie jest tylko **m** super magicznych pojemników, w któ
 
 Aby grzyby były dostępne tam i wtedy gdzie jest na nie popyt, wumpus może w nocy przemieścić grzyby z jednego sklepu do drugiego (po kolacji). Niestety przeniesienie jednego grzyba kosztuje wumpusa **c** wumpusodolarów (specjalne materiały zabezpieczające). Dodatkowo, ze względu na ograniczoną pojemność super-magicznej torby wumpus może przenosić jedynie **F**  grzybów każdej nocy. Jeżeli po przeniesieniu w danych sklepie jest więcej niż **m** grzybów, nadmiar jest zjadany i nie może być sprzedany następnego dnia.
 
-Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym czas jest mierzony w dniach, stanem jest liczba dostępnych grzybów w poszczególnych sklepach, a akcją liczba grzybów do przemieszczenia z pierwszego do drugiego sklepu (wartość ujemna oznacza, że trzeba przemieścić grzyby z drugiego sklepu do pierwszego). Grzyby przenoszone są **po** 
+Sformułuj ten problem jako dyskretny proces decyzyjny Markov’a, w którym czas jest mierzony w dniach, stanem jest liczba dostępnych grzybów w poszczególnych sklepach, a akcją liczba grzybów do przemieszczenia z pierwszego do drugiego sklepu (wartość ujemna oznacza, że trzeba przemieścić grzyby z drugiego sklepu do pierwszego). 
 
 Znajdź rozwiązanie tego problemu: strategię przemieszczania grzybów optymalizującą zysk w wumpusodolarach w przyszłości dla współczynnika dyskontowego **gamma** (czy wiesz, dlaczego musi być mniejszy od 1?) dla każdego stanu (wynikiem jest macierz **m+1** x **m+1**).
 
