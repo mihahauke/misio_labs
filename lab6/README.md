@@ -79,6 +79,6 @@ Do zaliczenia zadania wystarczający jest liniowy aproksymator i odpowiednie cec
 * Termin: **przed** rozpoczęciem lipca 2020
 
 ## Punktacja
-* **15** punktów według wzoru P(score) = TODO, gdzie score jest to sumaryczna ilość punktów ze wszystkich instancji. Ze wzoru tego uzyskać można do 20 punktów (do 5 punktów dodatkowych).
-* By zaliczyć zadanie należy otrzymać **POWYŻEJCONAJMNIEJ** 30% punktów (4.5)
+* **15** punktów według wzoru P(score) = max(min(20, 4.5 +(score-7000)/(15000-7000) *(15-4.5)),0), gdzie score jest to sumaryczna ilość punktów ze wszystkich instancji. Ze wzoru tego uzyskać można do 20 punktów (do 5 punktów dodatkowych). W przypadku błędów na instancjach (RTE, MLE, TLE itd.) instancja liczy się jako -1000.
+* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% punktów (4.5)
 * **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć rozwiązanie przed rozpoczęciem lipca 2020.
