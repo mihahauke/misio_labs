@@ -8,6 +8,7 @@ class OptilioPacmanGameRunner(object):
     def __init__(self,
                  layout_path,
                  random_ghosts=False,
+                 timeout=False
                  ):
         layout = get_layout(layout_path)
         if layout is None:
@@ -22,6 +23,7 @@ class OptilioPacmanGameRunner(object):
         self.ghosts = [GhostClass(i + 1) for i in range(layout.getNumGhosts())]
         self.display = NullGraphics()
         self.agent = StdIOAgent()
+        self.timeout = timeout
 
         print(layout.height)
         print(layout)
@@ -34,6 +36,7 @@ class OptilioPacmanGameRunner(object):
             self.agent,
             self.ghosts,
             self.display,
+            timeout=self.timeout,
             quiet=True)
         game.run(print_ghost_moves=True)
         print(END_GAME_WORD)
