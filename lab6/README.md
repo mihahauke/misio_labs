@@ -6,7 +6,7 @@
 Celem tego ćwiczenia jest poznanie jednego z najbardziej popularnych i eleganckich algorytmów uczenia ze wzmocnieniem: Q-learningu. 
 
 ## Zadanie
-Zadaniem jest zaimplementowanie algorytmu Q-learninig, który nauczy się grać w Pacmana. Rozwiązanie przetestowane zostanie 100-krotnie na wielu instancjach z losowymi lub złośliwymi duchami - część plansz jest dostępna  w folderze [pacman_layouts](pacman_layouts) (można się na nich uczyć, można też stworzyć własne). 
+Zadaniem jest zaimplementowanie algorytmu Q-learninig, który nauczy się grać w Pacmana i osiągnie średnio jak najlepszy wynik (punkty generowane są przez środowisko za zbieranie pigułek i zjadanie duszków). Rozwiązanie przetestowane zostanie 100-krotnie na wielu instancjach z losowymi lub złośliwymi duchami - część plansz jest dostępna  w folderze [pacman_layouts](pacman_layouts) (można się na nich uczyć, można też stworzyć własne). 
 
 Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też **kod** i **dane/** użyte do treningu oraz **instrukcję** odtworzenia uczenia w sposób deterministyczny. **W przypadku braku kodu uczącego, zadanie nie zostanie zaliczone.**
 
@@ -28,7 +28,7 @@ Wyżej wspomniany skrypt pokazuje jak odpalać agentów lokalnie. By zgłosić a
 ## Q-learning
 Na starcie można obejrzeć filmik z kursu, z którego wzięte zostało to zadanie na [YouTube](https://www.youtube.com/watch?v=w33Lplx49_A).
 
-Q-learning to algorytm do rozwiązywania MDP. Zamiast spotkanej wcześniej wartości stanu V(S) używa on Q(S,A), które mówi jaki jest oczekiwany zysk od teraz w przyszłość jeśli będziemy postępować według danej polityki. W najprostszej formulacji można użyć tabelki z zapisywanymi wartościami i aktualizować je tak jak w algorytmie value iteration (poprzednie zadanie). Niestety często dzieje się tak, że przestrzeń stanów jest zbyt duża by zastosować dokładne rozwiązanie - w tym momencie do uzyskania Q używamy funkcji aproksymującej zależnej od stanu i akcji. Funkcja taka może być dowolna, najczęściej stosuje się sieci neuronowe. Mając taką funkcję możemy policzyć (dla dowolnego przejścia (S,A,S',R)) błąd predykcji naszego aproksymatora oraz gradient względem parametrów aproksymatora. Mając gradient możemy poprawić naszą aproksymację - zasadniczo jest to uczenie nadzorowane na niestacjonarnej funkcji straty. Dokłądny wzór pokazany jest poniżej:
+Q-learning to algorytm do rozwiązywania MDP. Zamiast spotkanej wcześniej wartości stanu V(S) używa on Q(S,A), które mówi jaki jest oczekiwany zysk od teraz w przyszłość jeśli będziemy postępować według danej polityki. W najprostszej formulacji można użyć tabelki z zapisywanymi wartościami i aktualizować je tak jak w algorytmie value iteration (poprzednie zadanie). Niestety często dzieje się tak, że przestrzeń stanów jest zbyt duża by zastosować dokładne rozwiązanie - w tym momencie do uzyskania Q używamy funkcji aproksymującej zależnej od stanu i akcji. Funkcja taka może być dowolna, najczęściej stosuje się sieci neuronowe. Mając taką funkcję możemy policzyć (dla dowolnego przejścia (S,A,S',R)) błąd predykcji naszego aproksymatora oraz gradient względem parametrów aproksymatora. Mając gradient możemy poprawić naszą aproksymację - zasadniczo jest to uczenie nadzorowane ze zmieniającą się funkcją straty. Dokłądny wzór pokazany jest poniżej:
 
 ![q_update](qupdate.png)
 Zazwyczaj Q w "temporal difference target" wyłączone jest z propagacji gradientu (traktuje się je jako niezależną stałą).
