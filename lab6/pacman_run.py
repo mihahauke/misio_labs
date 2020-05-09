@@ -67,7 +67,8 @@ if __name__ == "__main__":
                                    random_ghosts=not args.smart_ghosts,
                                    show_window=not args.no_graphics,
                                    zoom_window=args.zoom,
-                                   frame_time=args.frame_time)
+                                   frame_time=args.frame_time,
+                                   timeout=-1000)
 
     games = []
     for i in tqdm.trange(args.num_games, leave=False):

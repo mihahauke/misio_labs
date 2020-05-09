@@ -52,6 +52,7 @@ The keys are 'a', 's', 'd', and 'w' to move (or arrow keys).  Have fun!
 ###################################################
 # YOUR INTERFACE TO THE PACMAN WORLD: A GameState #
 ###################################################
+DEFAULT_TIMEOUT=-1000
 
 class GameState:
     """
@@ -232,7 +233,7 @@ class GameState:
     # You shouldn't need to call these directly #
     #############################################
 
-    def __init__(self, prevState=None,timeout=None):
+    def __init__(self, prevState=None, timeout=DEFAULT_TIMEOUT):
         """
         Generates a new state by copying information from its predecessor.
         """
@@ -288,7 +289,7 @@ class ClassicRules:
     and how the game starts and ends.
     """
 
-    def newGame(self, layout, pacmanAgent, ghostAgents, display, quiet=False, timeout=None):
+    def newGame(self, layout, pacmanAgent, ghostAgents, display, quiet=False, timeout=DEFAULT_TIMEOUT):
         agents = [pacmanAgent] + ghostAgents[:layout.getNumGhosts()]
         initState = GameState(timeout=timeout)
         initState.initialize(layout, len(ghostAgents))
@@ -475,7 +476,7 @@ class LocalPacmanGameRunner(object):
                  show_window=False,
                  zoom_window=1.0,
                  frame_time=0.1,
-                 timeout=None,
+                 timeout=DEFAULT_TIMEOUT,
                  ):
         from .layout import get_layout
         layout = get_layout(layout_path)
@@ -495,7 +496,8 @@ class LocalPacmanGameRunner(object):
         else:
             from .graphicsDisplay import PacmanGraphics
             self.display = PacmanGraphics(zoom_window, frameTime=frame_time)
-        self.timeout= timeout
+        self.timeout = timeout
+
     def run_game(self, agent, verbose=False):
 
         quiet = not verbose
@@ -507,7 +509,7 @@ class LocalPacmanGameRunner(object):
             self.ghosts,
             self.display,
             quiet,
-        timeout=self.timeout)
+            timeout=self.timeout)
         game.run()
 
         return game
