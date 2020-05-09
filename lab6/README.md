@@ -8,14 +8,16 @@ Celem tego ćwiczenia jest poznanie jednego z najbardziej popularnych i eleganck
 ## Zadanie
 Zadaniem jest zaimplementowanie algorytmu Q-learninig, który nauczy się grać w Pacmana i osiągnie średnio jak najlepszy wynik (punkty generowane są przez środowisko za zbieranie pigułek i zjadanie duszków). Jest to uczenie ze wzmocnieniem - w każdym momencie nasz agent otrzymuje stan, ma wykonać akcję, a następnie otrzymuje nagrodę, którą ma nauczyć się maksymalizować. Każdy epizod składa się z wielu takich akcji - od momentu wejścia do Pacmana na planszę do momentu jego śmierci lub zwycięstwa (zjedzenia wszystkich kapsułek). Rozwiązanie przetestowane zostanie na 100 epizodach na 13 instancjach z losowymi lub złośliwymi duchami - część plansz jest dostępna  w folderze [pacman_layouts](pacman_layouts) (można się na nich uczyć, można też stworzyć własne). 
 
-Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też **kod** i **dane/** użyte do treningu oraz **instrukcję** odtworzenia uczenia w sposób deterministyczny. **W przypadku braku kodu uczącego, zadanie nie zostanie zaliczone.**
+Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też **kod** i **dane** użyte do treningu oraz **instrukcję** odtworzenia uczenia w sposób deterministyczny. **W przypadku braku kodu uczącego, zadanie nie zostanie zaliczone.**
 
 > Niestety nie ma żadnej automatycznej metody weryfikacji faktycznego zaimplementowania Q-learning poza weryfikacją kodu. W przypadku wykrycia braku implementacji Q-learningu (a coś innego, np systemy regułowe, przeszukiwanie drzewa itd.) rozwiązanie nie zostanie zakceptowane (0 punktów).
 
 ## Od czego zacząć
-Sklonować to repozytorium, zainstalować pakiet misio, następnie odpalić skrypt [pacman_run.py](pacman_run.py). Odpali on pojedynczą grę (obsługa przez klawiaturę).
+Sklonować to repozytorium, zainstalować pakiet misio, następnie odpalić skrypt [pacman_run.py](pacman_run.py). Uruchomi on pojedynczą grę (obsługa przez klawiaturę).
 
 Skrypt ma wiele opcji, aby je zobaczyć nalezy użyć przełącznika **--help**/**-h**. Można tu odpalać własnych agentów, grać samemu, testować, trenować. Zachęcam do przeskanowania jego treści i dowolnych modyfikacji (będą konieczne do uczenia).
+
+Jeśli nie chcemy grać sami możemy odpalić losowego z misio.pacman.agents.RandomAgent i obejrzeć jego implementację.
 
 ## Pierwsze zgłoszenie
 
