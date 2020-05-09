@@ -6,7 +6,7 @@
 Celem tego ćwiczenia jest poznanie jednego z najbardziej popularnych i eleganckich algorytmów uczenia ze wzmocnieniem: Q-learningu. 
 
 ## Zadanie
-Zadaniem jest zaimplementowanie algorytmu Q-learninig, który nauczy się grać w Pacmana i osiągnie średnio jak najlepszy wynik (punkty generowane są przez środowisko za zbieranie pigułek i zjadanie duszków). Rozwiązanie przetestowane zostanie 100-krotnie na wielu instancjach z losowymi lub złośliwymi duchami - część plansz jest dostępna  w folderze [pacman_layouts](pacman_layouts) (można się na nich uczyć, można też stworzyć własne). 
+Zadaniem jest zaimplementowanie algorytmu Q-learninig, który nauczy się grać w Pacmana i osiągnie średnio jak najlepszy wynik (punkty generowane są przez środowisko za zbieranie pigułek i zjadanie duszków). Jest to uczenie ze wzmocnieniem - w każdym momencie nasz agent otrzymuje stan, ma wykonać akcję, a następnie otrzymuje nagrodę, którą ma nauczyć się maksymalizować. Każdy epizod składa się z wielu takich akcji - od momentu wejścia do Pacmana na planszę do momentu jego śmierci lub zwycięstwa (zjedzenia wszystkich kapsułek). Rozwiązanie przetestowane zostanie na 100 epizodach na 13 instancjach z losowymi lub złośliwymi duchami - część plansz jest dostępna  w folderze [pacman_layouts](pacman_layouts) (można się na nich uczyć, można też stworzyć własne). 
 
 Rozwiązania powinny być już nauczonymi agentami, lecz zgłoszenie powinno zawierać też **kod** i **dane/** użyte do treningu oraz **instrukcję** odtworzenia uczenia w sposób deterministyczny. **W przypadku braku kodu uczącego, zadanie nie zostanie zaliczone.**
 
