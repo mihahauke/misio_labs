@@ -41,7 +41,7 @@ class PacmanQAgent(ReinforcementAgent):
     """
 
     def __init__(self,
-                 epsilon=0.05,
+                 epsilon=0.25,
                  gamma=0.8,
                  alpha=0.2,
                  numTraining=0,
@@ -56,7 +56,11 @@ class PacmanQAgent(ReinforcementAgent):
         self.featExtractor = extractor
         self.index = 0  # This is always Pacman
         self.weights = CustomCounter()
-        ReinforcementAgent.__init__(self, **args)
+        ReinforcementAgent.__init__(self, epsilon=epsilon,
+                                    gamma=gamma,
+                                    alpha=alpha,
+                                    numTraining=numTraining,
+                                    **args)
 
         "*** YOUR CODE HERE ***"
 
@@ -134,14 +138,10 @@ class PacmanQAgent(ReinforcementAgent):
     def final(self, state):
         "Called at the end of each game."
         # call the super-class final method
-        PacmanQAgent.final(self, state)
+        ReinforcementAgent.final(self, state)
 
         # did we finish training?
         if self.episodesSoFar == self.numTraining:
             # you might want to print your weights here for debugging
             "*** YOUR CODE HERE ***"
             pass
-
-
-
-

@@ -1,0 +1,1 @@
+To Train and test the agent please run "./train.sh" script from this directory. It will save weights to "weights.txt" file.
