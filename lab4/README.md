@@ -13,11 +13,13 @@ Formaty wejścia i wyjścia opisane są na stronie problemu.
 Przykładowe wejście i wyjście zaprezentowane jest też w plikach [mdp1_sample.in](mdp1_sample.in) i [mdp1_sample.out](mdp1_sample.out)
 
 Przykładowe, losowe rozwiązanie: [random_solution.py](random_solution.py)
+
 ## Zaliczenie
 * Rozwiązanie należy zgłościć na [Optil.io](https://www.optil.io/optilion/problem/3167).
-* Zadanie indywidualne (proszę się konsultować, wymieniać pomysłami, natchnieniem, ale **nie kodem**)
-* Termin: przed zajęciami za **tydzień**
+* Zadanie indywidualne (proszę się konsultować, wymieniać pomysłami, natchnieniem, ale **nie kodem**).
+* Termin: przed zajęciami za **tydzień**.
 
 ## Punktacja
-* 10 punktów (5 instancji publicznych i 3 prywatne)
+* 10 punktów (5 instancji publicznych i 3 prywatne).
+* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% punktów (3).
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
