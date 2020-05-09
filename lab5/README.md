@@ -23,5 +23,6 @@ Przykładowe rozwiązanie można znaleźć [tutaj](sample_solution.py) (dobry fo
 * Termin: **przed** zajęciami za **2 tygodnie** - dla grup, którym zajęcia wypadną (święta/godziny rektorskie) spóźnienia naliczane są wedle tygodni kalendarzowych, a każdy tydzień rozpoczyna się wraz z godziną, o której rozpoczęłyby się zajęcia gdyby się odbywały.
 
 ## Punktacja
-* 15 punktów (średnia ze wszystkich instancji)
+* 15 punktów (średnia ze wszystkich instancji).
+* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% punktów (4.5).
 * **Spóźnienie**: **-20%** za każdy rozpoczęty tydzień.
