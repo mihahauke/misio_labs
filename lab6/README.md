@@ -49,7 +49,7 @@ while True:
     wykonaj arbitralnie wybraną akcję a
     otrzymaj nagrodę r
     zaobserwuj stan s'
-    oblicz błąd TDerror = 0.5*(Q(s,a) - (r + gamma*max(Q(s',a')))^2
+    oblicz błąd TDerror = 0.5*(Q(s,a,w) - (r + gamma*max(Q(s',a',w)))^2
     oblicz gradient g z TDerror po w
     zaktualizuje wagi w: w -= alfa*g
 
@@ -67,7 +67,6 @@ Najprostszym rozwiązaniem problemu jest zrobienie ekstrakcji cech F(Q,S) i uży
 
 ## Co dalej?
 Do zaliczenia zadania wystarczający jest liniowy aproksymator i odpowiednie cechy, lecz zachęcam do zaimplementowania czegoś bardziej skomplikowanego np. 
-* zmniejszanie epsilona z czasem,
 * zmiany techniki optymalizacji, np. użycie zmiennej prędkości uczenia, lub użycie optymalizatora takiego jak Adagrad zamiast zwykłej aktualizacji GD,
 * użycia sieci neuronowych (liczenie gradientów robi się wtedy nieprzyjemne dlatego warto zastosować gotowe biblioteki do ML, np. PyTorch lub Tensorflow),
 * zaimplementowania 'replay memory' ([DQN](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf)),
