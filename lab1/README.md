@@ -42,3 +42,6 @@ for _ in range(n*s):
   print("Suck")
 
 ```
+
+## Testowanie lokalne
+W celu testowania lokalnie może się przydać [gotowa funkcja](../misio.aima.testing.py). (agent creator to po prostu funkcja tworząca nowego agenta).
