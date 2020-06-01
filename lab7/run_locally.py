@@ -14,15 +14,13 @@ random_state = np.random.RandomState(123)
 
 if __name__ == "__main__":
 
-    # env = gym.make('BipedalWalker-v2')
-
     n_games = 100
     seed = 123
     seeds = generate_deterministic_seeds(seed, n_games)
 
-
-    env = gym.make("Pendulum-v0")
-    # env = gym.make("BipedalWalker-v2")
+    # env = gym.make("Pendulum-v0")
+    # To use
+    env = gym.make("BipedalWalker-v3")
     rewards = []
     for i_episode in trange(n_games):
         np.random.seed(seeds[i_episode])
@@ -32,10 +30,9 @@ if __name__ == "__main__":
         done = False
         total_reward = 0
         while not done:
-            # env.render()
-            # time.sleep(0.05)
-            action = (random_state.rand(env.action_space.shape[0])-0.5)*2*env.action_space.high
-            new_state, reward, done, info = env.step(action  )
+            env.render()
+            action = (random_state.rand(env.action_space.shape[0]) - 0.5) * 2 * env.action_space.high
+            new_state, reward, done, info = env.step(action)
             total_reward += reward
             if done:
                 break
