@@ -3,6 +3,7 @@
 This repository contains resources necessary to complete Artificial Intelligence courses (MISiO) at Poznan University of Technology.
 
 * [Lectures](http://www.cs.put.poznan.pl/bwieloch/?page_id=821)
+* [Grades 2021](Coming soon)
 * [Grades 2020](https://docs.google.com/spreadsheets/d/1gf9hsB2qr4GsQVrZCliCZHcrqlIQ0Bst1mKypeQk57M/edit?usp=sharing)
 * [Grades 2019](https://docs.google.com/spreadsheets/d/1Okp2dJ20mIQSQEw2SzQ-COdBgvsHNPtdypPQ5ROZcxA/edit?usp=sharing) 
 
@@ -27,7 +28,7 @@ pip3 install git+https://github.com/mihahauke/misio_labs --user
 ## tl;dr:
 * you have to do **all** tasks
 * delays are penalized
-* cheating and sharing code will result in grade **2/2** 
+* cheating and sharing code will result in grade **2** 
 
 ## Full 
 >> "Unless stated otherwise in the task description" applies to all of the following points.
@@ -72,7 +73,7 @@ More Markov Decision Processes.
 Reinforcement Learning using one of the most popular and well known algorithm: Q-learning
 
 # [Lab 7 Actor-critic](lab7)(15pts)
-Reinforcement Learning: actor-critic (continuous action-spaces)
+Reinforcement Learning in continuous spaces (can be solved with actor-critic algorithm or e.g. ddpg)
 
 # Authors
 * Michał Kempka
