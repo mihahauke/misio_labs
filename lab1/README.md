@@ -4,9 +4,9 @@
 Wstępne zapoznanie się z podstawowymi pomysłami w AI: środowiska, agenty, racjonalność itd.
 
 ## Zadanie
-Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). Postępuj zgodnie z instrukcją.
+Uruchom **ipython3 notebook** i wybierz [misio_lab1.ipynb](misio_lab1.ipynb). W notebooku znajduje się kilka pytań i jedno zadanie programistyczne.
 
->> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio) oraz [aima3].
+> Do odpalenia zadań lokalnie potrzebne jest zainstalowanie pakietu [misio](../misio) oraz [aima3](https://github.com/Calysto/aima3) (pakiet towarzyszący książce Artificial Intelligence Modern Approach).
 
 ```
 git clone https://github.com/mihahauke/misio_labs
@@ -33,7 +33,8 @@ pip3 install aima3 --user
 * Termin: przed kolejnymi zajęciami (tydzień)
 
 ## Przykładowe rozwiązanie:
-Kod agenta, który ssie:
+Kod agenta, który zasysa kurz cały czas:
+
 ```python
 #!usr/bin/python3
 n,s = [int(x) for x in input().split()]
