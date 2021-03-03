@@ -42,9 +42,9 @@ Skrypt [random_solution.py](random_solution.py) pokazuje deterministycznego loso
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3170)
 * Wzięte zostanie pod uwagę **OSTATNIE** zgłoszenie.
-* Termin: **przed** rozpoczęciem **lipca 2020**
+* Termin: **TODO**
 
 ## Punktacja
-* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu roblemach, według wzoru: max(0,min(20,**pts_pendulum**/80) + **pts_walker**/40 + 15). Na zadaniu można uzyskać do 5 dodatkowych punktów. Błąd na którejkolwiek z instancji (MLE, RTE, TLE etc.) skutkuje niezaliczeniem zadania.
+* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu roblemach, według wzoru: **TODO**. Na zadaniu można uzyskać do 5 dodatkowych punktów. Błąd na którejkolwiek z instancji (MLE, RTE, TLE etc.) skutkuje niezaliczeniem zadania.
 * Zadanie jest **OBOWIĄZKOWE**, by je zaliczyć należy otrzymać **CONAJMNIEJ** 30% punktów (4.5)
 * **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć rozwiązanie przed rozpoczęciem **lipca** 2020.
