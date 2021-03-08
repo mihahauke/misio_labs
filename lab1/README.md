@@ -28,7 +28,7 @@ pip3 install aima3 --user
 
 ## Zaliczenie
 * Praca indywidualna.
-* Na kolejne zajęcia przynieś **jedną** wydrukowaną **stronę** A4 z wynikami zadań - odpowiedziami na pytania w notebooku (W szczególności kodem agenta, histogramem). W przypadku oddania większej liczby stron, wszystkie poza pierwszą zostaną zignorowane. [Przykładowe sprawozdanie(na 0 punktów)](report/aima_sample_report.pdf)
+* Na kolejne zajęcia przynieś **jedną** wydrukowaną **stronę** A4 z wynikami zadań - odpowiedziami na pytania w notebooku. W przypadku oddania większej liczby stron, wszystkie poza pierwszą zostaną zignorowane. [Przykładowe sprawozdanie(na 0 punktów)](report/aima_sample_report.pdf). **W czasie pandemii raporty powinny być oddane porpzez platformę EKursy.**
 * Kod agenta należy zgłosić na [Optil.io](https://www.optil.io/optilion/problem/3161). Testy będą odpalane deterministycznie więc zgłoszenie deterministycznego agenta będzie skutkowało tym samym wynikiem. Przed zgłoszeniem można przetestować agenta lokalnie (wynik powinien być podobny) dlatego częstość zgłoszeń na platformie jest ograniczona. Wyniki na kartce powinny zgadzać się z tymi uzyskanymi na Optil.io.
 * Termin: przed kolejnymi zajęciami (tydzień)
 
@@ -45,4 +45,4 @@ for _ in range(n*s):
 ```
 
 ## Testowanie lokalne
-W celu testowania lokalnie może się przydać [gotowa funkcja](../misio.aima.testing.py). (agent creator to po prostu funkcja tworząca nowego agenta).
+W celu testowania lokalnie może się przydać [gotowa funkcja](../misio/aima/testing.py). (agent creator to po prostu funkcja tworząca nowego agenta).
