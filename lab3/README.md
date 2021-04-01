@@ -13,7 +13,7 @@ W świecie Wumpusa są jamy. Dla otumanionego Wumpusa nie są one jednak groźne
 Wumpus posiada mapę świata, ale nie ma pojęcia, gdzie się znajduje. Pomóż mu jak w jak najmniejszej liczbie ruchów dotrzeć do pola oznaczonego jako Wyjście.
 
 ## Zaliczenie
-* Rozwiązanie należy zgłościć na [Optil.io](https://www.optil.io/optilion/problem/3166). Rozwiązanie testowane będzie odpalane 100 razy na różnych instancjach.
+* Rozwiązanie należy zgłościć na [Optil.io](https://www.optil.io/optilion/problem/3166). Rozwiązanie testowane będzie odpalane 100 razy na różnych instancjach. Funkcja [run_agent](../misio/optilio/lost_wumpus.py) może być pomocna do odpalenia na optilio.
 * Zadanie indywidualne (proszę się konsultować, wymieniać pomysłami, natchnieniem, ale **nie kodem**)
 * Termin: przed zajęciami za **dwa tygodnie**
 
