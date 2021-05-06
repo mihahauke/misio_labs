@@ -77,9 +77,9 @@ Do zaliczenia zadania wystarczający jest liniowy aproksymator i odpowiednie cec
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3179),
 * Wzięte zostanie pod uwagę **OSTATNIE** zgłoszenie,
-* Termin: **TODO**
+* Termin: 27.05 (3 tygodnie)
 
 ## Punktacja
-* **15** punktów według wzoru P(score) = **TODO**, gdzie score jest to sumaryczna ilość punktów ze wszystkich instancji. W przypadku błędów na instancjach (RTE, MLE, TLE itd.) instancja liczy się jako -1000.
-* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% punktów (4.5)
-* **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć rozwiązanie przed rozpoczęciem **lipca 2020**.
+* **15** punktów według wzoru P(score) = **TODO**, gdzie score jest to sumaryczna liczba punktów ze wszystkich instancji. W przypadku błędów na instancjach (RTE, MLE, TLE itd.) instancja liczy się jako -1000.
+* By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% maksymalnych punktów (4.5)
+* **Spóźnienie**: spóźnienia nie są dopuszczalne, -20% za każdy rozpoczęty tydzień spóźnienia.
