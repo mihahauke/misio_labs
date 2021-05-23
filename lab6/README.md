@@ -80,6 +80,6 @@ Do zaliczenia zadania wystarczający jest liniowy aproksymator i odpowiednie cec
 * Termin: 27.05 (3 tygodnie)
 
 ## Punktacja
-* **15** punktów według wzoru P(score) = **TODO**, gdzie score jest to sumaryczna liczba punktów ze wszystkich instancji. W przypadku błędów na instancjach (RTE, MLE, TLE itd.) instancja liczy się jako -1000.
+* **15** punktów według wzoru P(score) = **max(min(15, 4.5 +(score-7000)/(15000-7000) *(15-4.5)),0)**, gdzie score jest to sumaryczna liczba punktów ze wszystkich instancji. W przypadku błędów na instancjach (RTE, MLE, TLE itd.) instancja liczy się jako -1000.
 * By zaliczyć zadanie należy otrzymać **CONAJMNIEJ** 30% maksymalnych punktów (4.5)
 * **Spóźnienie**: spóźnienia nie są dopuszczalne, -20% za każdy rozpoczęty tydzień spóźnienia.
