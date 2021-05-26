@@ -34,7 +34,7 @@ Skrypt [random_solution.py](random_solution.py) pokazuje deterministycznego loso
 Żeby zadanie zostało zaliczone należy wysłać także kod uczący i instrukcję. Powinno być to zrealizowane jak w [poprzednim zadaniu](../lab6).
 
 ### Materiały
-* [Wykład Davida Silvera o  Gradient Policy](https://www.youtube.com/watch?v=KHZVXao4qXs)
+* [Wykład Davida Silvera o  Policy Gradient](https://www.youtube.com/watch?v=KHZVXao4qXs)
 * [Deterministic Policy Gradient](http://proceedings.mlr.press/v32/silver14.pdf)
 * [DDPG (Deep-DPG)](https://arxiv.org/abs/1509.02971)
 * [A3C (asynchronous advantage actor-critic)](https://arxiv.org/pdf/1602.01783.pdf)
@@ -45,6 +45,6 @@ Skrypt [random_solution.py](random_solution.py) pokazuje deterministycznego loso
 * Termin: **TODO**
 
 ## Punktacja
-* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu roblemach, według wzoru: **TODO**. Na zadaniu można uzyskać do 5 dodatkowych punktów. Błąd na którejkolwiek z instancji (MLE, RTE, TLE etc.) skutkuje niezaliczeniem zadania.
+* **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu problemach, według wzoru: max(0,min(15,(**pts_pendulum** + **pts_walker**)/40 + 15)). Błąd na którejkolwiek z instancji (MLE, RTE, TLE etc.) skutkuje niezaliczeniem zadania.
 * Zadanie jest **OBOWIĄZKOWE**, by je zaliczyć należy otrzymać **CONAJMNIEJ** 30% punktów (4.5)
 * **Spóźnienie**: spóźnienia nie są dopuszczalne, należy dostarczyć rozwiązanie przed rozpoczęciem **lipca** 2020.
