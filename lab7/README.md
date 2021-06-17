@@ -42,7 +42,7 @@ Skrypt [random_solution.py](random_solution.py) pokazuje deterministycznego loso
 ## Zaliczenie
 * Zgłoszenie rozwiązania na platformie [Optil.io](https://www.optil.io/optilion/problem/3170)
 * Wzięte zostanie pod uwagę **OSTATNIE** zgłoszenie.
-* Termin: **20.06.2021** do północy
+* Termin: **27.06.2021** do północy
 
 ## Punktacja
 * **15** punktów; punkty będą liczone na podstawie punktów uzyskanych na obydwu problemach, według wzoru: max(0,min(15,(**pts_pendulum** + **pts_walker**)/40 + 15)). Błąd na którejkolwiek z instancji (MLE, RTE, TLE etc.) skutkuje niezaliczeniem zadania.
