@@ -56,11 +56,7 @@ class PacmanQAgent(ReinforcementAgent):
         self.featExtractor = extractor
         self.index = 0  # This is always Pacman
         self.weights = CustomCounter()
-        ReinforcementAgent.__init__(self, epsilon=epsilon,
-                                    gamma=gamma,
-                                    alpha=alpha,
-                                    numTraining=numTraining,
-                                    **args)
+        ReinforcementAgent.__init__(self, **args)
 
         "*** YOUR CODE HERE ***"
 
