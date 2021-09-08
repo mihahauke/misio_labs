@@ -23,7 +23,7 @@ def test_locally(filename, agent_class,
         np.random.seed(seed)
 
     worlds = load_input_file(filename)
-    run_seeds = generate_deterministic_seeds(seed, [len(worlds), n])
+    run_seeds = generate_deterministic_seeds(seed, [len(worlds), n], res_type=np.int32)
 
     for world_i, (m, p, pj, pn) in enumerate(worlds):
         agent = agent_class(m, p, pj, pn)
