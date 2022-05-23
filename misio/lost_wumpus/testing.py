@@ -65,4 +65,6 @@ def test_locally(filename, agent_class,
     total_std = (np.array(stds) ** 2).sum() ** 0.5
     if verbose:
         print()
-    print("Total score: {:0.2f} ± {:0.2f}".format(mean_total_score, total_std))
+    if verbose:
+        print("Total score: {:0.2f} ± {:0.2f}".format(mean_total_score, total_std))
+    return mean_total_score
